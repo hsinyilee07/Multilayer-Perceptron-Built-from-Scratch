@@ -46,8 +46,7 @@ train_losses, test_losses = train(model, x_train, y_train, x_test, y_test, lr, e
 #plot losses
 plot_accumulated_losses(train_losses, test_losses)
 ```
-
-#Validate Model
+# Validate Model
 ```python
 from validate import test, regression_metrics_check
 
