@@ -1,6 +1,8 @@
 import numpy as np
 
 #Initializatoin Methods
+rng = np.random.default_rng()
+
 class Initialization:
     pass
 
