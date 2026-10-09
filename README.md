@@ -26,8 +26,7 @@ Applications Include:
 3. Multi-class Classification models: categorizes sample to multiple classes
 
 ### Modules in MLP
-1. Structure:\ 
-Alternating Linear & Activation Layers, each layer's output is another layer's input in the Forward Pass described below.
+1. Structure: <br> Alternating Linear & Activation Layers, each layer's output is another layer's input in the Forward Pass described below.
 
 2. Flow:
 1) Forward Pass: 
@@ -40,7 +39,7 @@ input ($x$) -> linear layer 1 ($z_1$) -> activation layer 1 ($h_1$) -> -> linear
 final prediction, could be a $z$ or a $h$ depending on whether the last layer is a linear layer or an activation layer
 
 2) Loss Calculation: 
-uses the output $\hat{y}$ to calculate the loss, which measures how "far" is the predicted result $\hat{y}$ from the actual value $y val$.
+uses the output $\hat{y}$ to calculate the loss, which measures how "far" is the predicted result $\hat{y}$ from the actual value.
 
 3) Backpropagation: 
 calculate the partial derivative of loss with respect to each of $\hat{y}$, $h_i$, $z_i$. The goal is to use the partial derivative of loss with respect to $z_i$ to calculate the gradient for the weight and bias of each perceptron. 
