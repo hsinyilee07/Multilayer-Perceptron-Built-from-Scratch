@@ -30,7 +30,7 @@ Applications Include:
 1. Structure: Alternating Linear & Activation Layers, each layer's output is another layer's input in the Forward Pass described below.
 
 2. Flow:
-1) Forward Pass: input ($x$) -> linear layer1 ($z_1$) -> activation layer1 ($h_1$) -> ... alternating ... -> output ($\hat{y}$)
+1) Forward Pass: input ($x$) -> linear layer 1 ($z_1$) -> activation layer 1 ($h_1$) -> -> linear layer 2 ($z_2$) -> activation layer 2 ($h_2$) -> ...alternation... -> output ($\hat{y}$)
 
 - $x$: input value, input of the first linear layer
 - $z_i$: output value of the linear layer $i$, input value of the activation layer $i$
