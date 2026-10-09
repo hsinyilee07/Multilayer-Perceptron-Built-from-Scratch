@@ -170,8 +170,7 @@ HINT: the shape of $\frac{\partial {loss}}{\partial {parameter}}$ is the shape o
 
 $\because {loss}$ = $\frac{1}{2}(\hat{y} - y_{val})^2$
 
-$\therefore$
-$\frac{\partial {loss}}{\partial {\hat{y}}} = 2 \times (\hat{y} - y_{val})$
+$\therefore {\frac{\partial {loss}}{\partial {\hat{y}}} = 2 \times (\hat{y} - y_{val})}$
 
 check shape: $\frac{\partial {loss}}{\partial {\hat{y}}}$ is (a, 1)
 
@@ -179,11 +178,13 @@ check shape: $\frac{\partial {loss}}{\partial {\hat{y}}}$ is (a, 1)
 
 using the chain rule: $\frac{\partial {loss}}{\partial {\hat{h_2}}}$ = $\frac{\partial {loss}}{\partial {\hat{y}}} \times \frac{\partial {\hat{y}}}{\partial {\hat{h_2}}}$
 
-because $\hat{y}$ = $h_2 \cdot w_3 + b_3$
+$\because {\hat{y}$ = $h_2 \cdot w_3 + b_3}$
 
-so $\frac{\partial {\hat{y}}}{\partial {\hat{h_2}}}$ = $w_3$
+$\therefore {\frac{\partial {\hat{y}}}{\partial {\hat{h_2}}}$ = $w_3}$
 
-so $\frac{\partial {loss}}{\partial {\hat{h_2}}}$ = $\frac{\partial {loss}}{\partial {\hat{y}}} \cdot w_3$
+$\therefore {\frac{\partial {loss}}{\partial {\hat{h_2}}}$ = $\frac{\partial {loss}}{\partial {\hat{y}}} \cdot w_3}$
+
+
 
 
 
