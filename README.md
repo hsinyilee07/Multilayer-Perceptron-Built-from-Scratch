@@ -43,7 +43,9 @@ Applications Include:
 More math and calculation details of the modules in MLP would be explained below.
 
 ## Forward Pass
-Let us define a model of two hidden layers.<br>The forward pass would be:
+Let us define a model of two hidden layers.
+
+The forward pass would be:
 <br>$z_1$ = $x$ @ $w_1$ + $b_1$
 <br>$h_1$ = activation($z_1$)
 <br>$z_2$ = $h_1$ @ $w_2$ + $b_2$
