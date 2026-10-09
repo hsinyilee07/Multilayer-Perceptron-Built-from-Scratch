@@ -230,7 +230,7 @@ $\therefore$
 $\frac{\partial {loss}}{\partial {z_1}}$ = $\frac{\partial {loss}}{\partial {h_1}}$ $\times$ activation_derivative($z_1$)
 
 ### Calculate Partial Derivative for the weights and bias.
-Now we calculate the partial derivate of loss with respect to every ${z_i}$ and ${h_i}$. Now lets finally calculate $\frac{\partial {loss}}{\partial {w_i}}$ and $\frac{\partial {loss}}{\partial {b_i}}$.
+Now we calculated $\frac{\partial {loss}}{\partial {z_i}}$ and $\frac{\partial {loss}}{\partial {h_i}}$, lets finally calculate $\frac{\partial {loss}}{\partial {w_i}}$ and $\frac{\partial {loss}}{\partial {b_i}}$.
 
 
 ## Putting it all together: nn.py
