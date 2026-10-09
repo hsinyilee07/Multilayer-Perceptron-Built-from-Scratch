@@ -273,8 +273,7 @@ Check Shape:
 
 (a, 1) = (a, 1), same as $b_3$
 
-
-We DON'T have to do more calculations, because all $w_i$ and $b_i$ are calculated in the same way. And because $\hat{y}$ is $z_3$, we know both $w_i$ and $b_i$ are related to $z_i$.
+3. We DON'T have to do more calculations, because all $w_i$ and $b_i$ are calculated in the same way. And because $\hat{y}$ is $z_3$, we know both $w_i$ and $b_i$ are related to $z_i$.
 
 So the general formula is:
 
