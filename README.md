@@ -388,7 +388,10 @@ $$
 
 How is ${\frac{\partial {loss}}{\partial {z}}}$ and ${\frac{\partial {loss}}{\partial {z}}}$ related by ${w^ T}$? 
 
-Let take one element $\frac{\partial {loss}}{\partial {z_{1, 1}}}$ as an example. 
+Let us take one element $\frac{\partial {loss}}{\partial {h_{1, 1}}}$ as an example. 
+
+We know that according to chain rule $\frac{\partial {loss}}{\partial {h_{1, 1}}}$ = $\frac{\partial {loss}}{\partial {z}} \times \frac{\partial {z}}{\partial {h_{1, 1}}}$
+
 
 # USING THE CODE: Initiate and Train a MLP
 ## Sections:
