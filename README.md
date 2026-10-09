@@ -1,7 +1,7 @@
 # Multilayer-Perceptron-Built-from-Scratch
 Multilayer Perceptron implemented from scratch using raw python and numpy. For those who want to learn about the math behind the components of MLP and the optimization strategies in training models.  
 
-## Installation
+## Installation Guide
 Install the following libraries:
 ```bash
 pip install numpy 
@@ -10,7 +10,50 @@ pip install pandas
 pip install scikit-learn
 ```
 
-# Putting it all together: Initiate and Train a model
+# Walk Through of Each Module of a Multilayer Perceptron
+## Sections:
+1. Overview
+2. Linear module: linear.py
+3. Activation module: activation.py
+4. Forward Pass (math)
+5. Putting it all together: nn.py
+
+## Overview
+Multilayer Perceptron (MLP) is the most basic architecture of neural network and deep learning.
+
+Applications Include:
+1. Regression models: predict continuous numerical value 
+2. Binary Classification models: categorizes sample to two classes 
+3. Multi-class Classification models: categorizes sample to multiple classes
+
+### Modules in MLP
+1. Structure: Alternating Linear & Activation Layers, each layer's output is another layer's input in the Forward Pass described below.
+
+2. Flow:
+1) Forward Pass: input (x) -> linear layer1 ($z_1$) -> activation layer1 ($h_1$) -> ... alternating ... -> output ($y_pred$)
+
+- x: input value, input of the first linear layer
+- $z_i$: output value of the linear layer i, input value of the activation layer i
+- $h_i$: output value of the activation layer i, input value of the next linear layer $i + 1 $ 
+- $y_pred$: could be a $z_last$ or a $h_last$ depending on whether the last layer is a linear layer or a activation layer
+
+2) Loss Calculation: uses the output (y_pred) to calculate the loss, which measures how "far" is the predicted result from the actual value
+3) Backpropagation: calculate the partial derivative of loss with respect to each of y_pred, h (output of each activation layer), z 
+
+
+
+## Linear module: linear.py
+
+## Activation module: activation.py
+
+## Forward Pass (math)
+
+## Back propagation (math)
+
+## Putting it all together: nn.py
+
+
+# Putting It All Together: Initiate and Train a Model
 ## Sections:
 1. Initiate Model
 2. Data Preparation
