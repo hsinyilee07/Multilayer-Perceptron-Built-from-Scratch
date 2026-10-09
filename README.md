@@ -354,6 +354,9 @@ elif isinstance(layer, Activation):
 ```
 Vice Versa process. Current x is $\frac{\partial {loss}}{\partial {h_{i-1}}}$, so new x is updated as $\frac{\partial {loss}}{\partial {z_{i-1}}}$.
 
+### In-Depth Understanding of MLP Gradient Calculation 
+
+#### Why does ${\frac{\partial {loss}}{\partial {h_i}}} = {\frac{\partial {loss}}{\partial {z_{i+1}}}} \cdot {w_{i+1} ^ T}$ ?
 
 # USING THE CODE: Initiate and Train a MLP
 ## Sections:
