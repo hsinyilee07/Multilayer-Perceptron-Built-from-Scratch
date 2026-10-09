@@ -277,7 +277,7 @@ We DON'T have to do more calculations, because all $w_i$ and $b_i$ are calculate
 
 So the general formula is:
 
-${\frac{\partial {loss}}{\partial {w_i}}} = {x_i ^ T} \cdot {\frac{\partial {loss}}{\partial {z_i}}}$.      Here $x_i$ is $h_{i-1}$, for which $h_0$ is $x$
+${\frac{\partial {loss}}{\partial {w_i}}} = {h_{i-1} ^ T} \cdot {\frac{\partial {loss}}{\partial {z_i}}}$.      !!!$h_0$ is $x$
 
 ${\frac{\partial {loss}}{\partial {b_i}}} = \frac{\partial {loss}}{\partial {z_i}}$
 
@@ -287,7 +287,7 @@ ${\frac{\partial {loss}}{\partial {h_i}}} = {\frac{\partial {loss}}{\partial {z_
 
 $\frac{\partial {loss}}{\partial {z_i}}$ = $\frac{\partial {loss}}{\partial {h_i}}$ $\times$ activation_derivative($z_i$)
 
-${\frac{\partial {loss}}{\partial {w_i}}} = {x_i ^ T} \cdot {\frac{\partial {loss}}{\partial {z_i}}}$.      Here $x_i$ is $h_{i-1}$, for which $h_0$ is $x$
+${\frac{\partial {loss}}{\partial {w_i}}} = {h_{i-1} ^ T} \cdot {\frac{\partial {loss}}{\partial {z_i}}}$.      !!!$h_0$ is $x$
 
 ${\frac{\partial {loss}}{\partial {b_i}}} = \frac{\partial {loss}}{\partial {z_i}}$
 
