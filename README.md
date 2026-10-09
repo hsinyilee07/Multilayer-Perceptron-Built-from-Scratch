@@ -386,6 +386,10 @@ $$
 \end{bmatrix}
 $$
 
+How is ${\frac{\partial {loss}}{\partial {z}}}$ and ${\frac{\partial {loss}}{\partial {z}}}$ related by ${w^ T}$? 
+
+Let take one element $\frac{\partial {loss}}{\partial {z_{1, 1}}}$ as an example. 
+
 # USING THE CODE: Initiate and Train a MLP
 ## Sections:
 1. Initiate Model
