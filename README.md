@@ -115,14 +115,14 @@ The entire goal of training a neural network is telling each perceptron or neuro
 
 So what we want to do, is we want to calculate how much, and in what direction (positive or negative) the ${loss}$ changes as the weight $w_i$ and bias $b_i$ changes. And this the definition of $\frac{\partial {loss}}{\partial {w_i}}$ and $\frac{\partial {loss}}{\partial {b_i}}$.
 
-If the partial derivative is positive, it means that the slope of the loss is increasing at the current parameter (weight or bias), so we want to make the current parameter smaller by a certain amount so the loss would decrease. Vice versa, if the partial derivative is negative, it means that the slope of the loss is decreasing at the current parameter, so we want to make the current parameter bigger by a certain amount so the loss would decrease. The certain amount is determined by $\frac{\partial {loss}}{\partial {parameter}}$ multiplied by the learning rate.
+If the partial derivative is positive, it means that the slope of the loss is increasing at the current parameter (weight or bias), so we want to make the current parameter smaller by a certain amount so the loss would decrease. Vice versa, if the partial derivative is negative, it means that the slope of the loss is decreasing at the current parameter, so we want to make the current parameter bigger by a certain amount so the loss would decrease. The certain amount is determined by $\frac{\partial {loss}}{\partial {parameter}}$ multiplied by the learning rate {lr}.
 
-$w_i -= {lr} * \frac{\partial {loss}}{\partial {w_i}}$
+$w_i -= {lr} \times \frac{\partial {loss}}{\partial {w_i}}$
 
-$b_i -= {lr} * \frac{\partial {loss}}{\partial {b_i}}$
-
+$b_i -= {lr} \times \frac{\partial {loss}}{\partial {b_i}}$
 
 ### Mechanism 
+Now, let us see how do we compute $\frac{\partial {loss}}{\partial {parameter}}$.
 
 We will still use the model of two hidden layers as example:
 
@@ -135,6 +135,15 @@ $z_1$ = $x$ @ $w_1$ + $b_1$
 And we will say that this is a regression model, which uses the MeanSquareError as loss function:
 
 ${loss}$ = $\frac{1}{2}(\hat{y} - y_{val})^2$
+
+Backpropagation, unlike foward pass, is computing the partial derivative of ${loss}$ with respect to the output of each layer starting the last layer to the first layer.
+
+1. $\frac{\partial {loss}}{\partial {\hat{y}}}$
+${loss}$ = $\frac{1}{2}(\hat{y} - y_{val})^2$
+
+$\frac{\partial {loss}}{\partial {\hat{y}}} = 2 \times \hat{y} - y_{val}$
+
+
 ## Putting it all together: nn.py
 
 
