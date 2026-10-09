@@ -365,10 +365,10 @@ ${\frac{\partial {loss}}{\partial {h}}}$ is a matrix of shape (m, n), in which:
 - n is the number of features passed as input to the linear {z} layer.
 
 $$
-\begin{bmatrix}
+\begin{pmatrix}
 {\frac{\partial {loss}}{\partial {h_{1, 1}}}} & \cdots & 3 \\
 4 & \vdots & 6 \\
-\end{bmatrix}
+\end{pmatrix}
 $$
 
 
