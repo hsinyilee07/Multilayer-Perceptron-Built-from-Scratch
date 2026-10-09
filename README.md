@@ -233,6 +233,7 @@ $\frac{\partial {loss}}{\partial {z_1}}$ = $\frac{\partial {loss}}{\partial {h_1
 Now we calculated $\frac{\partial {loss}}{\partial {z_i}}$ and $\frac{\partial {loss}}{\partial {h_i}}$, lets finally calculate $\frac{\partial {loss}}{\partial {w_i}}$ and $\frac{\partial {loss}}{\partial {b_i}}$.
 
 1. $\frac{\partial {loss}}{\partial {w_3}}$ 
+
 Using the chain rule: $\frac{\partial {loss}}{\partial {w_3}}$ = $\frac{\partial {loss}}{\partial {h_2}} \times \frac{\partial {h_2}}{\partial {w_3}}$
 
 $\because$
