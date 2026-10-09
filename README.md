@@ -36,7 +36,7 @@ Applications Include:
     - $h_i$: output value of the activation layer $i$, input value of the next linear layer $i + 1$ 
     - $\hat{y}$: final prediction, could be a $z$ or a $h$ depending on whether the last layer is a linear layer or an activation layer
 
-    2) Loss Calculation:<br>uses the output $\hat{y}$ to calculate the loss, which measures how "far" is the predicted result $\hat{y}$ from the actual value.
+    2) Loss Calculation:<br>uses the output $\hat{y}$ to calculate the loss, which measures how "far" is the predicted result $\hat{y}$ from the actual value $y_{val}$.
 
     3) Backpropagation:<br>calculate the partial derivative of loss with respect to each of $\hat{y}$, $h_i$, $z_i$. The goal is to use the partial derivative of loss with respect to $z_i$ to calculate the gradient for the weight and bias of each perceptron. 
 
