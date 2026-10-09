@@ -11,10 +11,10 @@ pip install scikit-learn
 ```
 
 ## Sections:
-1. CONCEPT & MATH BEHIND THE CODE: Walk Through of Each Module of a Multilayer Perceptron
+1. CONCEPT & MATH BEHIND THE CODE: Walk Through of Each Module in a Multilayer Perceptron
 2. USING THE CODE: Initiate and Train a Multilayer Perceptron
 
-# CONCEPT & MATH BEHIND THE CODE: Walk Through of Each Module of a Multilayer Perceptron
+# CONCEPT & MATH BEHIND THE CODE: Walk Through of Each Module in a Multilayer Perceptron
 ## Sections:
 1. Overview
 2. Forward Pass
@@ -357,6 +357,9 @@ Vice Versa process. Current x is $\frac{\partial {loss}}{\partial {h_{i-1}}}$, s
 ### In-Depth Understanding of MLP Gradient Calculation 
 
 #### Why does ${\frac{\partial {loss}}{\partial {h_i}}} = {\frac{\partial {loss}}{\partial {z_{i+1}}}} \cdot {w_{i+1} ^ T}$ ?
+
+Lets first simplify the expression to ${\frac{\partial {loss}}{\partial {h}}} = {\frac{\partial {loss}}{\partial {z}}}} \cdot {w^ T}$ ?
+
 
 # USING THE CODE: Initiate and Train a MLP
 ## Sections:
