@@ -119,7 +119,7 @@ If the partial derivative is positive, it means that the slope of the loss is in
 
 $w_i$ = $w_i - {lr} * \frac{\partial {loss}}{\partial {w_i}}$
 
-$b_i$ = $b_i - \frac{\partial {loss}}{\partial {b_i}}$
+$b_i$ = $b_i - {lr} * \frac{\partial {loss}}{\partial {b_i}}$
 
 
 ### Mechanism 
