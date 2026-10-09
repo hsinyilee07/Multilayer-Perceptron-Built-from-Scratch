@@ -115,10 +115,11 @@ The entire goal of training a neural network is telling each perceptron or neuro
 
 So what we want to do, is we want to calculate how much, and in what direction (positive or negative) the ${loss}$ changes as the weight $w_i$ and bias $b_i$ changes. And this the definition of $\frac{\partial {loss}}{\partial {w_i}}$ and $\frac{\partial {loss}}{\partial {b_i}}$.
 
-If the partial derivative is positive, it means that the slope of the loss is increasing at the current parameter (weight or bias), so we want to make the current parameter smaller by a certain amount so the loss would decrease. Vice versa, if the partial derivative is negative, it means that the slope of the loss is decreasing at the current parameter, so we want to make the current parameter bigger by a certain amount so the loss would decrease. The certain amount is determined by $\frac{\partial {loss}}{\partial {parameter}}$ times the learning rate.
+If the partial derivative is positive, it means that the slope of the loss is increasing at the current parameter (weight or bias), so we want to make the current parameter smaller by a certain amount so the loss would decrease. Vice versa, if the partial derivative is negative, it means that the slope of the loss is decreasing at the current parameter, so we want to make the current parameter bigger by a certain amount so the loss would decrease. The certain amount is determined by $\frac{\partial {loss}}{\partial {parameter}}$ multiplied by the learning rate.
 
-$w_i$ = $w_i - \frac{\partial {loss}}{\partial {w_i}}$
-$w_i$ = $b_i - \frac{\partial {loss}}{\partial {b_i}}$
+$w_i$ = $w_i - {lr} * \frac{\partial {loss}}{\partial {w_i}}$
+
+$b_i$ = $b_i - {lr} * \frac{\partial {loss}}{\partial {b_i}}$
 
 
 ### Mechanism 
