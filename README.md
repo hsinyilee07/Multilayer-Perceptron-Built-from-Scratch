@@ -184,6 +184,16 @@ $\therefore {\frac{\partial {\hat{y}}}{\partial {\hat{h_2}}}} = {w_3}$
 
 $\therefore {\frac{\partial {loss}}{\partial {\hat{h_2}}}} = {\frac{\partial {loss}}{\partial {\hat{y}}}} \cdot {w_3}$
 
+But is this correct? Let us check the shape!
+
+(a, 1) $\cdot$ (d, 1) = ERROR != (a, d)
+
+What we do is we can transpose $w_3$ so that $w_3^T$ has a shape of (d,1).
+
+(a, 1) $\cdot$ (1, d) = ERROR != (a, d)
+
+$\therefore {\frac{\partial {loss}}{\partial {\hat{h_2}}}} = {\frac{\partial {loss}}{\partial {\hat{y}}}} \cdot {w_3 ^ T}$
+
 
 
 
