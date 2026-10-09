@@ -14,7 +14,7 @@ pip install scikit-learn
 1. CONCEPT & MATH BEHIND THE CODE: Walk Through of Each Module of a Multilayer Perceptron
 2. USING THE CODE: Initiate and Train a Multilayer Perceptron
 
-# CONCEPT & MATH BEHIND CODE: Walk Through of Each Module of a Multilayer Perceptron
+# CONCEPT & MATH BEHIND THE CODE: Walk Through of Each Module of a Multilayer Perceptron
 ## Sections:
 1. Overview
 2. Forward Pass
