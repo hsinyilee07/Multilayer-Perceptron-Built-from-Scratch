@@ -227,7 +227,7 @@ $\therefore {\frac{\partial {loss}}{\partial {\hat{h_1}}}} = {\frac{\partial {lo
 Same as step 3. 
 
 $\therefore$
-$\frac{\partial {loss}}{\partial {\hat{z_1}}}$ = $\frac{\partial {loss}}{\partial {\hat{h_2}}}$ $\times$ activation_derivative($z_1$)
+$\frac{\partial {loss}}{\partial {\hat{z_1}}}$ = $\frac{\partial {loss}}{\partial {\hat{h_1}}}$ $\times$ activation_derivative($z_1$)
 
 
 ## Putting it all together: nn.py
