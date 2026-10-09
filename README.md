@@ -278,7 +278,7 @@ We DON'T have to do more calculations, because all $w_i$ and $b_i$ are calculate
 
 So the general formula is:
 
-${\frac{\partial {loss}}{\partial {w_i}}} = {x_i ^ T} \cdot {\frac{\partial {loss}}{\partial {z_i}}}$. here $x_i$ is $h_{i-1}$, and $h_0$ is $x$
+${\frac{\partial {loss}}{\partial {w_i}}} = {x_i ^ T} \cdot {\frac{\partial {loss}}{\partial {z_i}}}$.      Here $x_i$ is $h_{i-1}$, and $h_0$ is $x$
 
 ${\frac{\partial {loss}}{\partial {b_i}}} = \frac{\partial {loss}}{\partial {z_i}}$
 
