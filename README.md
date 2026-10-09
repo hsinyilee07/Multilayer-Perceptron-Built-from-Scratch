@@ -161,7 +161,7 @@ And we will say that this is a regression model, which uses the MeanSquareError 
 
 shape: $\hat{y}$ = (a, 1), $y_{val}$ = (a, 1), ${loss}$ = (a, 1)
 
-#### Calculate Partial Derivative
+#### Calculate Partial Derivative for outputs of each layer
 Backpropagation, unlike foward pass, is computing the partial derivative of ${loss}$ with respect to the output of each layer starting the last layer to the first layer. 
 
 HINT: the shape of $\frac{\partial {loss}}{\partial {parameter}}$ is the shape of the parameter!
@@ -228,6 +228,9 @@ Same as step 3.
 
 $\therefore$
 $\frac{\partial {loss}}{\partial {z_1}}$ = $\frac{\partial {loss}}{\partial {h_1}}$ $\times$ activation_derivative($z_1$)
+
+### Calculate Partial Derivative for the weights and bias.
+Now we calculate the partial derivate of loss with respect to every ${z_i}$ and ${h_i}$. Now lets finally calculate $\frac{\partial {loss}}{\partial {w_i}}$ and $\frac{\partial {loss}}{\partial {b_i}}$.
 
 
 ## Putting it all together: nn.py
