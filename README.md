@@ -281,7 +281,7 @@ ${\frac{\partial {loss}}{\partial {w_i}}} = {h_{i-1} ^ T} \cdot {\frac{\partial 
 
 ${\frac{\partial {loss}}{\partial {b_i}}} = \frac{\partial {loss}}{\partial {z_i}}$
 
-## Summarize Formula 
+## Summarize Partial Derivative Formula for $z_i$, $h_i$, $w_i$, $b_i$
 
 ${\frac{\partial {loss}}{\partial {h_i}}} = {\frac{\partial {loss}}{\partial {z_{i+1}}}} \cdot {w_{i+1} ^ T}$
 
