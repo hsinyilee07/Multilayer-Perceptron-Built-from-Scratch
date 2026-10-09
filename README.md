@@ -103,9 +103,22 @@ def __call__(self, pred, val):
     self.val = val
     return np.mean((pred - val)**2)
 ```
-loss = $\frac{1}{2}(\hat{y} - y_{val})^2$ is computed.
+${loss}$ = $\frac{1}{2}(\hat{y} - y_{val})^2$ is computed.
 
-## Back propagation 
+## Back propagation
+This is the most confusing part of a Neural Network! But hang in there, we can do it!
+
+We will still use the model of two hidden layers as example:
+
+$z_1$ = $x$ @ $w_1$ + $b_1$
+<br>$h_1$ = activation($z_1$)
+<br>$z_2$ = $h_1$ @ $w_2$ + $b_2$
+<br>$h_2$ = activation($z_1$)
+<br>$\hat{y}$ = $h_2$ @ $w_3$ + $b_3$
+
+And we will say that this is a regression model, which uses the MeanSquareError as loss function:
+
+${loss}$ = $\frac{1}{2}(\hat{y} - y_{val})^2$
 
 ## Putting it all together: nn.py
 
