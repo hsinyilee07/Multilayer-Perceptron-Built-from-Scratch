@@ -178,7 +178,7 @@ check shape: $\frac{\partial {loss}}{\partial {\hat{y}}}$ is (a, 1)
 
 using the chain rule: $\frac{\partial {loss}}{\partial {\hat{h_2}}}$ = $\frac{\partial {loss}}{\partial {\hat{y}}} \times \frac{\partial {\hat{y}}}{\partial {\hat{h_2}}}$
 
-$\because {\hat{y}$ = $h_2 \cdot w_3 + b_3}$
+$\because {\hat{y}} = {h_2 \cdot w_3 + b_3}$
 
 $\therefore {\frac{\partial {\hat{y}}}{\partial {\hat{h_2}}}$ = $w_3}$
 
