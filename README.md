@@ -10,7 +10,14 @@ pip install pandas
 pip install scikit-learn
 ```
 
-# Initialize Model
+# Putting it all together: Initiate and Train a model
+## Sections:
+1. Initiate Model
+2. Data Preparation
+3. Train Model
+4. Validate Model
+
+## Initiate Model
 ```python
 from nn import MLP
 from linear import Linear
@@ -30,7 +37,7 @@ model.assign_loss_fn(MeanSquareError())
 model.assign_optimizer(Adam(epsilon = 1e-8, beta1 = 0.9, beta2 = 0.99))
 ```
 
-# Data Preparation
+## Data Preparation
 ```python
 from data import data_preparation
 
@@ -38,7 +45,7 @@ data_file_pth = "..."
 x_train, y_train, x_test, y_test = data_preparation(data_file_path = data_file_pth)
 ```
 
-# Train Model
+## Train Model
 ```python
 from train import train
 from plots import plot_accumulated_losses
@@ -55,7 +62,7 @@ train_losses, test_losses = train(model, x_train, y_train, x_test, y_test, lr, e
 #plot losses
 plot_accumulated_losses(train_losses, test_losses)
 ```
-# Validate Model
+## Validate Model
 ```python
 from validate import test, regression_metrics_check
 
