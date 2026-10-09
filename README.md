@@ -161,7 +161,7 @@ And we will say that this is a regression model, which uses the MeanSquareError 
 
 shape: $\hat{y}$ = (a, 1), $y_{val}$ = (a, 1), ${loss}$ = (a, 1)
 
-#### Calculate Gradient for the Output of Each Layer ($z_i$ and $w_i$)
+#### Calculate Gradient for the Output of Each Layer (${\frac{\partial {loss}}{\partial {z_i}}}$ and ${\frac{\partial {loss}}{\partial {h_i}}}$)
 Backpropagation, unlike foward pass, is computing the partial derivative of ${loss}$ with respect to the output of each layer starting the last layer to the first layer. 
 
 HINT: the shape of $\frac{\partial {loss}}{\partial {parameter}}$ is the shape of the parameter!
@@ -229,7 +229,7 @@ Same as step 3.
 $\therefore$
 $\frac{\partial {loss}}{\partial {z_1}}$ = $\frac{\partial {loss}}{\partial {h_1}}$ $\times$ activation_derivative($z_1$)
 
-### Calculate Partial Derivative for the Weights and Bias.
+### Calculate Gradient for the Weights and Bias ({\frac{\partial {loss}}{\partial {w_i}}}, {\frac{\partial {loss}}{\partial {b_i}}}).
 Now we calculated $\frac{\partial {loss}}{\partial {z_i}}$ and $\frac{\partial {loss}}{\partial {h_i}}$, lets finally calculate $\frac{\partial {loss}}{\partial {w_i}}$ and $\frac{\partial {loss}}{\partial {b_i}}$.
 
 1. $\frac{\partial {loss}}{\partial {w_3}}$ 
@@ -348,12 +348,6 @@ elif isinstance(layer, Activation):
     x = x * layer.take_derivative() 
 ```
 Vice Versa process. Current x is $\frac{\partial {loss}}{\partial {h_{i-1}}}$, so new x is updated as $\frac{\partial {loss}}{\partial {z_{i-1}}}$.
-
-
-
-
-
-
 
 
 # Putting It All Together: Initiate and Train a Model
