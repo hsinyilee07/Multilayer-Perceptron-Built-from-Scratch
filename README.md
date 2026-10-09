@@ -190,7 +190,7 @@ But is this correct? Let us check the shape!
 
 What we do is we can transpose $w_3$ so that $w_3^T$ has a shape of (d,1).
 
-(a, 1) $\cdot$ (1, d) = ERROR != (a, d)
+(a, 1) $\cdot$ (1, d) = (a, d)
 
 $\therefore {\frac{\partial {loss}}{\partial {\hat{h_2}}}} = {\frac{\partial {loss}}{\partial {\hat{y}}}} \cdot {w_3 ^ T}$
 
