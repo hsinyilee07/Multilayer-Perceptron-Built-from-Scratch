@@ -174,6 +174,7 @@ $\therefore {\frac{\partial {loss}}{\partial {\hat{y}}} = 2 \times (\hat{y} - y_
 
 check shape: $\frac{\partial {loss}}{\partial {\hat{y}}}$ is (a, 1), same as ${\hat{y}}$
 
+
 2. $\frac{\partial {loss}}{\partial {\hat{h_2}}}$
 
 Using the chain rule: $\frac{\partial {loss}}{\partial {\hat{h_2}}}$ = $\frac{\partial {loss}}{\partial {\hat{y}}} \times \frac{\partial {\hat{y}}}{\partial {\hat{h_2}}}$
@@ -194,6 +195,7 @@ What we do is we can transpose $w_3$ so that $w_3^T$ has a shape of (d,1).
 
 $\therefore {\frac{\partial {loss}}{\partial {\hat{h_2}}}} = {\frac{\partial {loss}}{\partial {\hat{y}}}} \cdot {w_3 ^ T}$
 
+
 3. $\frac{\partial {loss}}{\partial {\hat{z_2}}}$
 
 Using the chain rule: $\frac{\partial {loss}}{\partial {\hat{z_2}}}$ = $\frac{\partial {loss}}{\partial {\hat{h_2}}} \times \frac{\partial {\hat{h_2}}}{\partial {\hat{z_2}}}$
@@ -212,6 +214,14 @@ Check Shape:
 activation_derivative($z_2$) shape same as activation($z_2$), which is (a, d)
 
 (a,d) $\times$ (a,d) = (a, d), same as $z_2$ 
+
+
+4. $\frac{\partial {loss}}{\partial {\hat{h_1}}}$
+
+Same as step 2, as ${\hat{y}}$ is technically ${z_3}$.
+
+${\frac{\partial {loss}}{\partial {\hat{h_1}}}} = {\frac{\partial {loss}}{\partial {z_2}}} \cdot {w_2 ^ T}$
+
 
 
 
