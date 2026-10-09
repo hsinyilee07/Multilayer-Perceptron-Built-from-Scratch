@@ -55,7 +55,7 @@ $z_1$ = $x$ @ $w_1$ + $b_1$
 
 Here $\hat{y}$ serves as $z_3$.
 
-### Refer to Linear.py
+### Refer to linear.py
 Linear Class sets up:
 
 $z_i$ = $x$ @ $w_i$ + $b_i$
@@ -79,6 +79,18 @@ def __call__(self, x):
 ```
 Stores the input $x$ for backpropagation (explained later), and called during forward pass to calculate $z_i$.
 
+### Refer to activation.py
+Activation Class sets up:
+
+$h_i$ = activation($z_i$)
+
+The below is an example for ReLU activation.
+```python
+def __call__(self, x):
+      self.input = x[:]
+      return np.maximum(0 , x)
+```
+Stores the input $x$ for backpropagation (explained later), and called during forward pass to calculate $h_i$.
 
 ## Back propagation 
 
