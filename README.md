@@ -47,17 +47,27 @@ Applications Include:
 If you are confused, don't worry! This is just an overview, each module in MLP would be explained in detail below.
 
 ## Forward Pass
-Let us define a model of two hidden layers.
+Let us define a model of two hidden layers (meaning there are two pairs of Linear and Activation Layer before the final layer).
 
 The forward pass would be:
 
+Linear Layer 1:
+
 $z_1$ = $x \cdot w_1 + b_1$
+
+Activation Layer 1:
 
 $h_1$ = activation($z_1$)  
 
+Linear Layer 2:
+
 $z_2$ = $h_1 \cdot w_2 + b_2$
 
+Activation Layer 2:
+
 $h_2$ = activation($z_2$)
+
+Linear Layer 3:
 
 $\hat{y}$ = $h_2 \cdot w_3 + b_3$
 
