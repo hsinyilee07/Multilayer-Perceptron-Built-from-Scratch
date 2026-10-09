@@ -126,7 +126,7 @@ Now, let us see how do we compute $\frac{\partial {loss}}{\partial {parameter}}$
 
 We will still use the model of two hidden layers as example, the shape of each variable is listed:
 
-$\mathbf{z_1$ = $x$ @ $w_1$ + $b_1}$ 
+$$\mathbf{z_1$ = $x$ @ $w_1$ + $b_1}$$
 
 shape: $x$ = (a, b), $w_1$ = (b, c), $b_1$ = (c), $z_1$ = (a, c)
 - a is number of samples
