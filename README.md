@@ -47,11 +47,15 @@ Let us define a model of two hidden layers.
 
 The forward pass would be:
 
-$z_1$ = $x$ @ $w_1$ + $b_1$
-<br>$h_1$ = activation($z_1$)
-<br>$z_2$ = $h_1$ @ $w_2$ + $b_2$
-<br>$h_2$ = activation($z_2$)
-<br>$\hat{y}$ = $h_2$ @ $w_3$ + $b_3$
+$z_1$ = $x \cdot w_1 + b_1$
+
+$h_1$ = activation($z_1$)  
+
+$z_2$ = $h_1 \cdot w_2 + b_2$
+
+$h_2$ = activation($z_2$)
+
+$\hat{y}$ = $h_2 \cdot w_3 + b_3$
 
 Here $\hat{y}$ serves as $z_3$.
 
@@ -126,27 +130,27 @@ Now, let us see how do we compute $\frac{\partial {loss}}{\partial {parameter}}$
 
 We will still use the model of two hidden layers as example, the shape of each variable is listed:
 
-$z_1$ = $x \cdot w_1 + b_1$
+1. $z_1$ = $x \cdot w_1 + b_1$
 
 shape: $x$ = (a, b), $w_1$ = (b, c), $b_1$ = (c), $z_1$ = (a, c)
 - a is number of samples
 - b is the number of features of the sample
 - c is the number of perpectrons or neurons in this layer
 
-$h_1$ = activation($z_1$)  
+2. $h_1$ = activation($z_1$)  
 
 shape: $z_1$ = (a, c), $h_1$ = (a, c)
 
-$z_2$ = $h_1$ @ $w_2$ + $b_2$
+3. $z_2$ = $h_1 \cdot w_2 + b_2$
 
 shape: $h_1$ = (a, c), $w_2$ = (c, d), $b_2$ = (d), $z_2$ = (a, d)
 - d is the number of perpectrons or neurons in this layer
 
-$h_2$ = activation($z_2$)
+4. $h_2$ = activation($z_2$)
 
 shape: $z_2$ = (a, d), $h_2$ = (a, d)
 
-$\hat{y}$ = $h_2$ @ $w_3$ + $b_3$
+5. $\hat{y}$ = $h_2 \cdot w_3 + b_3$
 
 shape: $h_2$ = (a, d), $w_3$ = (d, 1), $b_3$ = (e, 1), $\hat{y}$ = (a, 1)
 
