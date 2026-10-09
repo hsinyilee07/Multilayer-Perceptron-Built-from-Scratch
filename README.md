@@ -373,6 +373,28 @@ $$
 \end{bmatrix}
 $$
 
+${\frac{\partial {loss}}{\partial {z}}}$ is a matrix of shape (m, p), in which:
+- m is the number of samples
+- p is the number of perceptrons or neurons in this linear ${z}$ layer.
+
+$$
+\begin{bmatrix}
+{\frac{\partial {loss}}{\partial {z_{1, 1}}}} & {\frac{\partial {loss}}{\partial {z_{1, 2}}}} & \cdots & {\frac{\partial {loss}}{\partial {z_{1, p}}}} \\
+{\frac{\partial {loss}}{\partial {z_{2, 1}}}} & {\frac{\partial {loss}}{\partial {z_{2, 2}}}} & \cdots & {\frac{\partial {loss}}{\partial {z_{2, p}}}} \\
+\vdots & \vdots & \vdots & \vdots \\
+{\frac{\partial {loss}}{\partial {z_{m, 1}}}} & {\frac{\partial {loss}}{\partial {z_{m, 2}}}} & \cdots & {\frac{\partial {loss}}{\partial {z_{m, p}}}}  \\
+\end{bmatrix}
+$$
+
+$$
+\begin{bmatrix}
+{\frac{\partial {loss}}{\partial {h_{1, 1}}}} & {\frac{\partial {loss}}{\partial {h_{1, 2}}}} & \cdots & {\frac{\partial {loss}}{\partial {h_{1, n}}}} \\
+{\frac{\partial {loss}}{\partial {h_{2, 1}}}} & {\frac{\partial {loss}}{\partial {h_{2, 2}}}} & \cdots & {\frac{\partial {loss}}{\partial {h_{2, n}}}} \\
+\vdots & \vdots & \vdots & \vdots \\
+{\frac{\partial {loss}}{\partial {h_{m, 1}}}} & {\frac{\partial {loss}}{\partial {h_{m, 2}}}} & \cdots & {\frac{\partial {loss}}{\partial {h_{m, n}}}}  \\
+\end{bmatrix}
+$$
+
 
 # USING THE CODE: Initiate and Train a MLP
 ## Sections:
