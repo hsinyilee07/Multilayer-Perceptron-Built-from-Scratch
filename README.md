@@ -113,7 +113,12 @@ Before we go into the mechanism of backpropagation, let us understand what does 
 
 The entire goal of training a neural network is telling each perceptron or neuron how to change its weight and bias to yield a prediction $\hat{y}$ that is closest to the actual value $y_{val}$. In other words, it wants to adjust its weight and bias so the loss is minimized.
 
-So what we want to do, is we want to calculate how much, and in what direction (positive or negative) the ${loss}$ changes as the weight $w_i$ and bias $b_i$ changes. And this the definition of $\frac{\partial {loss}}{\partial {w_i}}$ and $\frac{\partial {loss}}{\partial {b_i}}$
+So what we want to do, is we want to calculate how much, and in what direction (positive or negative) the ${loss}$ changes as the weight $w_i$ and bias $b_i$ changes. And this the definition of $\frac{\partial {loss}}{\partial {w_i}}$ and $\frac{\partial {loss}}{\partial {b_i}}$.
+
+If the partial derivative is positive, it means that the slope of the loss is increasing at the current parameter (weight or bias), so we want to make the current parameter smaller by a certain amount so the loss would decrease. Vice versa, if the partial derivative is negative, it means that the slope of the loss is decreasing at the current parameter, so we want to make the current parameter bigger by a certain amount so the loss would decrease. The certain amount is determined by $\frac{\partial {loss}}{\partial {parameter}}$ times the learning rate.
+
+$w_i$ = $w_i - \frac{\partial {loss}}{\partial {w_i}}$
+$w_i$ = $b_i - \frac{\partial {loss}}{\partial {b_i}}$
 
 
 ### Mechanism 
