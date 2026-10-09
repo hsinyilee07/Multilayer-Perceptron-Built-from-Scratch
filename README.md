@@ -186,7 +186,7 @@ $\therefore {\frac{\partial {loss}}{\partial {\hat{h_2}}}} = {\frac{\partial {lo
 
 But is this correct? Let us check the shape!
 
-(a, 1) $\cdot$ (d, 1) = ERROR $\neq$ (a, d)
+(a, 1) $\cdot$ (d, 1) $!=$ ERROR $\neq$ (a, d)
 
 What we do is we can transpose $w_3$ so that $w_3^T$ has a shape of (d,1).
 
