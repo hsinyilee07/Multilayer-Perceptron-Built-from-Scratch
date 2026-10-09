@@ -46,6 +46,7 @@ More math and calculation details of the modules in MLP would be explained below
 Let us define a model of two hidden layers.
 
 The forward pass would be:
+
 <br>$z_1$ = $x$ @ $w_1$ + $b_1$
 <br>$h_1$ = activation($z_1$)
 <br>$z_2$ = $h_1$ @ $w_2$ + $b_2$
@@ -55,7 +56,29 @@ The forward pass would be:
 Here $\hat{y}$ serves as $z_3$.
 
 ### Refer to Linear.py
+Linear Class sets up:
+
 $z_i$ = $x$ @ $w_i$ + $b_i$
+
+```python
+def __init__(self, input_dim, output_dim):
+    self.weights = Random.normal(input_dim, output_dim)
+    self.bias = np.zeros(output_dim)
+```
+The weights is initialized as a 2D numpy array of shape (input_dim, output_dim) with values determined by a Initilization Class (initialization strategy explained later), in this case, it is the Random Class.
+
+- input_dim: number of features in the input $x$ 
+- output_dim: how many perceptrons or neurons are there in this layer
+
+The biases is initialized a 1D numpy array of shape (output_dim) of values of zero.
+
+```python
+def __call__(self, x):
+    self.input = x[:]
+    return x @ self.weights + self.bias
+```
+Stores the input $x$ for backpropagation (explained later), and called during forward pass to calculate $z_i$.
+
 
 ## Back propagation 
 
