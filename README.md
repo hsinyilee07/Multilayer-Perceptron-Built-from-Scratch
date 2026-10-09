@@ -128,7 +128,7 @@ $b_i -= {lr} \times \frac{\partial {loss}}{\partial {b_i}}$
 ### Mechanism 
 Now, let us see how do we compute $\frac{\partial {loss}}{\partial {parameter}}$.
 
-#### Set of model structure
+#### Set up MLP structure
 We will still use the model of two hidden layers as example, the shape of each variable is listed:
 
 1. $z_1$ = $x \cdot w_1 + b_1$
