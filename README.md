@@ -366,7 +366,7 @@ ${\frac{\partial {loss}}{\partial {h}}}$ is a matrix of shape (m, n), in which:
 
 $$
 \begin{bmatrix}
-1 & 2 & 3 \\
+{\frac{\partial {loss}}{\partial {h_{1, 1}}}} & 2 & 3 \\
 4 & 5 & 6 \\
 \end{bmatrix}
 $$
