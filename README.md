@@ -360,6 +360,17 @@ Vice Versa process. Current x is $\frac{\partial {loss}}{\partial {h_{i-1}}}$, s
 
 Lets first simplify the expression to ${\frac{\partial {loss}}{\partial {h}}} = {\frac{\partial {loss}}{\partial {z}}} \cdot {w^ T}$.
 
+${\frac{\partial {loss}}{\partial {h}}}$ is a matrix of shape (m, n), in which:
+- m is the number of samples
+- n is the number of features passed as input to the linear {z} layer.
+
+$$
+\begin{bmatrix}
+1 & 2 & 3 \\
+4 & 5 & 6 \\
+\end{bmatrix}
+$$
+
 
 # USING THE CODE: Initiate and Train a MLP
 ## Sections:
