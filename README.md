@@ -161,7 +161,7 @@ And we will say that this is a regression model, which uses the MeanSquareError 
 
 shape: $\hat{y}$ = (a, 1), $y_{val}$ = (a, 1), ${loss}$ = (a, 1)
 
-#### Calculate Partial Derivative for outputs of each layer
+#### Calculate Partial Derivative for the Output of Each Layer ($z_i$ and $w_i$)
 Backpropagation, unlike foward pass, is computing the partial derivative of ${loss}$ with respect to the output of each layer starting the last layer to the first layer. 
 
 HINT: the shape of $\frac{\partial {loss}}{\partial {parameter}}$ is the shape of the parameter!
@@ -229,9 +229,31 @@ Same as step 3.
 $\therefore$
 $\frac{\partial {loss}}{\partial {z_1}}$ = $\frac{\partial {loss}}{\partial {h_1}}$ $\times$ activation_derivative($z_1$)
 
-### Calculate Partial Derivative for the weights and bias.
+### Calculate Partial Derivative for the Weights and Bias.
 Now we calculated $\frac{\partial {loss}}{\partial {z_i}}$ and $\frac{\partial {loss}}{\partial {h_i}}$, lets finally calculate $\frac{\partial {loss}}{\partial {w_i}}$ and $\frac{\partial {loss}}{\partial {b_i}}$.
 
+1. $\frac{\partial {loss}}{\partial {w_3}}$ 
+Using the chain rule: $\frac{\partial {loss}}{\partial {w_3}}$ = $\frac{\partial {loss}}{\partial {h_2}} \times \frac{\partial {h_2}}{\partial {w_3}}$
+
+$\because$
+$\hat{y}$ = $h_2 \cdot w_3 + b_3$
+
+$\therefore$
+${\frac{\partial {h_2}}{\partial {w_3}}} = {h_2}$
+
+$\therefore$
+${\frac{\partial {loss}}{\partial {w_3}}} = {\frac{\partial {loss}}{\partial {\hat{y}}}} \cdot {h_2}$
+
+But does the shape match?
+
+(a, 1) $\cdot$ (a, d) $\neq$ (d, 1)
+
+So we can transpose ${h_2}$ so ${h_2 ^ T}$ is (d, a).
+
+(d, a) $\cdot$ (a, 1) = (d, 1), same as ${w_3}$
+
+$\therefore$
+${\frac{\partial {loss}}{\partial {w_3}}} = {h_2 ^ T} \cdot {\frac{\partial {loss}}{\partial {\hat{y}}}} $
 
 ## Putting it all together: nn.py
 
