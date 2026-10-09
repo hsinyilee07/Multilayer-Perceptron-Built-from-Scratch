@@ -125,7 +125,7 @@ $w_i -= {lr} \times \frac{\partial {loss}}{\partial {w_i}}$
 
 $b_i -= {lr} \times \frac{\partial {loss}}{\partial {b_i}}$
 
-### Mechanism 
+### Mechanism of Backpropagation
 Now, let us see how do we compute $\frac{\partial {loss}}{\partial {parameter}}$.
 
 #### Set up MLP structure
@@ -172,9 +172,17 @@ ${loss}$ = $\frac{1}{2}(\hat{y} - y_{val})^2$
 
 $\frac{\partial {loss}}{\partial {\hat{y}}} = 2 \times (\hat{y} - y_{val})$
 
+check shape: $\frac{\partial {loss}}{\partial {\hat{y}}}$ is (a, 1)
+
 2. $\frac{\partial {loss}}{\partial {\hat{h_2}}}$
 
 using the chain rule: $\frac{\partial {loss}}{\partial {\hat{h_2}}}$ = $\frac{\partial {loss}}{\partial {\hat{y}}} \times \frac{\partial {\hat{y}}}{\partial {\hat{h_2}}}$
+
+$\hat{y}$ = $h_2 \cdot w_3 + b_3$
+
+$\frac{\partial {\hat{y}}}{\partial {\hat{h_2}}}$ = $w_3$
+
+so $\frac{\partial {loss}}{\partial {\hat{h_2}}}$ = $\frac{\partial {loss}}{\partial {\hat{y}}} \cdot w_3$
 
 
 
