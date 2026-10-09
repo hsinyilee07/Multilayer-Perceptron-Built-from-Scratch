@@ -180,9 +180,9 @@ using the chain rule: $\frac{\partial {loss}}{\partial {\hat{h_2}}}$ = $\frac{\p
 
 $\because {\hat{y}} = {h_2 \cdot w_3 + b_3}$
 
-$\therefore {\frac{\partial {\hat{y}}}{\partial {\hat{h_2}}}$ = $w_3}$
+$\therefore {\frac{\partial {\hat{y}}}{\partial {\hat{h_2}}}} = {w_3}$
 
-$\therefore {\frac{\partial {loss}}{\partial {\hat{h_2}}}$ = $\frac{\partial {loss}}{\partial {\hat{y}}} \cdot w_3}$
+$\therefore {\frac{\partial {loss}}{\partial {\hat{h_2}}}} = {\frac{\partial {loss}}{\partial {\hat{y}}}} \cdot {w_3}$
 
 
 
