@@ -283,7 +283,7 @@ ${\frac{\partial {loss}}{\partial {b_i}}} = \frac{\partial {loss}}{\partial {z_i
 
 ## Summarize Formula 
 
-$\therefore {\frac{\partial {loss}}{\partial {h_i}}} = {\frac{\partial {loss}}{\partial {z_{i+1}}}} \cdot {w_{i+1} ^ T}$
+${\frac{\partial {loss}}{\partial {h_i}}} = {\frac{\partial {loss}}{\partial {z_{i+1}}}} \cdot {w_{i+1} ^ T}$
 
 $\frac{\partial {loss}}{\partial {z_i}}$ = $\frac{\partial {loss}}{\partial {h_i}}$ $\times$ activation_derivative($z_i$)
 
