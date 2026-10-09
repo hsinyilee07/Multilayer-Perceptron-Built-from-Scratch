@@ -367,6 +367,7 @@ ${\frac{\partial {loss}}{\partial {h}}}$ is a matrix of shape (m, n), in which:
 $$
 \begin{bmatrix}
 {\frac{\partial {loss}}{\partial {h_{1, 1}}}} & {\frac{\partial {loss}}{\partial {h_{1, 2}}}} & \cdots & {\frac{\partial {loss}}{\partial {h_{1, n}}}} \\
+{\frac{\partial {loss}}{\partial {h_{2, 1}}}} & {\frac{\partial {loss}}{\partial {h_{2, 2}}}} & \cdots & {\frac{\partial {loss}}{\partial {h_{2, n}}}} \\
 \vdots & \vdots & \vdots & \vdots \\
 {\frac{\partial {loss}}{\partial {h_{m, 1}}}} & {\frac{\partial {loss}}{\partial {h_{m, 2}}}} & \cdots & {\frac{\partial {loss}}{\partial {h_{m, n}}}}  \\
 \end{bmatrix}
