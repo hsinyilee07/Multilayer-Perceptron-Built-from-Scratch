@@ -26,7 +26,7 @@ Applications Include:
 3. Multi-class Classification models: categorizes sample to multiple classes
 
 ### Modules in MLP
-1. Structure: 
+1. Structure:\ 
 Alternating Linear & Activation Layers, each layer's output is another layer's input in the Forward Pass described below.
 
 2. Flow:
