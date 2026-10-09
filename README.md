@@ -40,7 +40,7 @@ Applications Include:
 
     3) Backpropagation:<br>calculate the partial derivative of loss with respect to each of $\hat{y}$, $h_i$, $z_i$. The goal is to use the partial derivative of loss with respect to $z_i$ to calculate the gradient for the weight and bias of each perceptron. 
 
-More math and calculation details of the modules in MLP would be explained below.
+If you are confused, don't worry! This is just an overview, each module in MLP would be explained in detail below.
 
 ## Forward Pass
 Let us define a model of two hidden layers.
@@ -105,8 +105,15 @@ def __call__(self, pred, val):
 ```
 ${loss}$ = $\frac{1}{2}(\hat{y} - y_{val})^2$ is computed.
 
-## Back propagation
+## Backpropagation
 This is the most confusing part of a Neural Network! But hang in there, we can do it!
+
+### Goal of Backpropagation
+Before we go into the mechanism of backpropagation, let us understand what does it do.<br>The entire goal of training a neural network is telling each perceptron or neuron how to change its weight and bias to yield a prediction \hat{y} that is closest to the actual value y_{val}. In other words, it wants to adjust its weight and bias so the loss is minimized.
+<br>So what we want to do, is we want to calculate how much, and in what direction (positive or negative) the ${loss}$ changes as the weight $w_i$ and bias $b_i$ changes. And this the definition of $\frac{\partial {loss}}{\partial {w_i}}$ 
+
+
+### Mechanism 
 
 We will still use the model of two hidden layers as example:
 
@@ -119,7 +126,6 @@ $z_1$ = $x$ @ $w_1$ + $b_1$
 And we will say that this is a regression model, which uses the MeanSquareError as loss function:
 
 ${loss}$ = $\frac{1}{2}(\hat{y} - y_{val})^2$
-
 ## Putting it all together: nn.py
 
 
