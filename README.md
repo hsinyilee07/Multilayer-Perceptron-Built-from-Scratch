@@ -46,10 +46,14 @@ More math and calculation details of the modules in MLP would be explained below
 Let us define a model of two hidden layers.<br>The forward pass would be:
 <br>$z_1$ = $x$ @ $w_1$ + $b_1$
 <br>$h_1$ = activation($z_1$)
-<br>$z_2$ = $x$ @ $w_2$ + $b_2$
+<br>$z_2$ = $h_1$ @ $w_2$ + $b_2$
 <br>$h_2$ = activation($z_1$)
-<br>$\hat{y}$ = $x$ @ $w_3$ + $b_3$
-<br>Here $\hat{y}$ serves as $z_3$.
+<br>$\hat{y}$ = $h_2$ @ $w_3$ + $b_3$
+
+Here $\hat{y}$ serves as $z_3$.
+
+### Refer to Linear.py
+$z_i$ = $x$ @ $w_i$ + $b_i$
 
 ## Back propagation 
 
