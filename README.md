@@ -109,8 +109,11 @@ ${loss}$ = $\frac{1}{2}(\hat{y} - y_{val})^2$ is computed.
 This is the most confusing part of a Neural Network! But hang in there, we can do it!
 
 ### Goal of Backpropagation
-Before we go into the mechanism of backpropagation, let us understand what does it do.<br>The entire goal of training a neural network is telling each perceptron or neuron how to change its weight and bias to yield a prediction $\hat{y}$ that is closest to the actual value $y_{val}$. In other words, it wants to adjust its weight and bias so the loss is minimized.
-<br>So what we want to do, is we want to calculate how much, and in what direction (positive or negative) the ${loss}$ changes as the weight $w_i$ and bias $b_i$ changes. And this the definition of $\frac{\partial {loss}}{\partial {w_i}}$ 
+Before we go into the mechanism of backpropagation, let us understand what does it do.
+
+The entire goal of training a neural network is telling each perceptron or neuron how to change its weight and bias to yield a prediction $\hat{y}$ that is closest to the actual value $y_{val}$. In other words, it wants to adjust its weight and bias so the loss is minimized.
+
+So what we want to do, is we want to calculate how much, and in what direction (positive or negative) the ${loss}$ changes as the weight $w_i$ and bias $b_i$ changes. And this the definition of $\frac{\partial {loss}}{\partial {w_i}}$ and $\frac{\partial {loss}}{\partial {b_i}}$
 
 
 ### Mechanism 
