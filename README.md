@@ -358,7 +358,7 @@ Vice Versa process. Current x is $\frac{\partial {loss}}{\partial {h_{i-1}}}$, s
 
 #### Why does ${\frac{\partial {loss}}{\partial {h_i}}} = {\frac{\partial {loss}}{\partial {z_{i+1}}}} \cdot {w_{i+1} ^ T}$ ?
 
-Lets first simplify the expression to ${\frac{\partial {loss}}{\partial {h}}} = {\frac{\partial {loss}}{\partial {z}}}} \cdot {w^ T}$.
+Lets first simplify the expression to ${\frac{\partial {loss}}{\partial {h}}} = {\frac{\partial {loss}}{\partial {z}}} \cdot {w^ T}$.
 
 
 # USING THE CODE: Initiate and Train a MLP
