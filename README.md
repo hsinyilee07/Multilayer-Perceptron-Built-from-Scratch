@@ -334,7 +334,7 @@ So we can calculate $\frac{\partial {loss}}{\partial {w_i}}$, $\frac{\partial {l
 ```python
 layer.update(lr, dL_dweight, dL_dbias)
 ```
-refer to Linear Class in linear.py
+Refer to Linear Class in linear.py
 
 ```python
 def update(self, lr, gradient_weight, gradient_bias):
