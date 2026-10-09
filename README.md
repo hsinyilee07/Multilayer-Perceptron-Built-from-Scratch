@@ -229,7 +229,7 @@ Same as step 3.
 $\therefore$
 $\frac{\partial {loss}}{\partial {z_1}}$ = $\frac{\partial {loss}}{\partial {h_1}}$ $\times$ activation_derivative($z_1$)
 
-### Calculate Gradient of the Weights and Bias ({\frac{\partial {loss}}{\partial {w_i}}}, {\frac{\partial {loss}}{\partial {b_i}}}).
+### Calculate Gradient of the Weights and Bias (${\frac{\partial {loss}}{\partial {w_i}}}$, ${\frac{\partial {loss}}{\partial {b_i}}}$).
 Now we calculated $\frac{\partial {loss}}{\partial {z_i}}$ and $\frac{\partial {loss}}{\partial {h_i}}$, lets finally calculate $\frac{\partial {loss}}{\partial {w_i}}$ and $\frac{\partial {loss}}{\partial {b_i}}$.
 
 1. $\frac{\partial {loss}}{\partial {w_3}}$ 
