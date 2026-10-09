@@ -69,7 +69,7 @@ def __init__(self, input_dim, output_dim):
     self.weights = Random.normal(input_dim, output_dim)
     self.bias = np.zeros(output_dim)
 ```
-The weights is initialized as a 2D numpy array of shape (input_dim, output_dim) with values determined by a Initilization Class (initialization strategy explained later), in this case, it is the Random Class.
+The weights is initialized as a 2D numpy array of shape (input_dim, output_dim) with values determined by a Initilization Class (initialization strategy explained later in Advanced Technique Section), in this case, it is the Random Class.
 
 - input_dim: number of features in the input $x$ 
 - output_dim: how many perceptrons or neurons are there in this layer
@@ -293,7 +293,57 @@ ${\frac{\partial {loss}}{\partial {b_i}}} = \frac{\partial {loss}}{\partial {z_i
 
 
 
-## Putting it all together: nn.py
+## Putting it All Together: nn.py
+```python
+ def backward(self, lr, decay_rate=1e-4):
+        x = self.loss_fn.backward()   
+
+        for layer in reversed(self.layers):
+            if isinstance(layer, Linear): 
+              dL_dweight = layer.input.T @ x
+              dL_dbias = np.sum(x)
+              layer.update(lr, dL_dweight, dL_dbias)
+
+              x = x @ layer.weights.T  
+            elif isinstance(layer, Activation):   
+              x = x * layer.take_derivative()              
+```
+
+The gradient calculation for weight and bias shown here is simplified than in the actual file because we didn't cover L2 Regularization and use of Optimizer yet. We will cover that in Advanced Technique Section.
+
+BREAKDOWN:
+```python
+x = self.loss_fn.backward()   
+```
+Calculates $\frac{\partial {loss}}{\partial {\hat{y}}}$
+
+```python
+if isinstance(layer, Linear): 
+```
+If we are in a layer of $z_i$ = $h_{i-1} \cdot w_i + b_i$, we know the current x is a $\frac{\partial {loss}}{\partial {z_i}}$.
+
+```python
+dL_dweight = layer.input.T @ x
+dL_dbias = np.sum(x)
+layer.update(lr, dL_dweight, dL_dbias)
+
+x = x @ layer.weights.T  
+```
+
+So we can calculate $\frac{\partial {loss}}{\partial {w_i}}$, $\frac{\partial {loss}}{\partial {b_i}}$, and $\frac{\partial {loss}}{\partial {h_{i-1}}}$. The x is updated as $\frac{\partial {loss}}{\partial {h_i}}$.
+
+```python
+elif isinstance(layer, Activation):   
+    x = x * layer.take_derivative() 
+```
+
+Vice Versa process. Current x is $\frac{\partial {loss}}{\partial {h_{i-1}}}$, so new x is updated as $\frac{\partial {loss}}{\partial {z_{i-1}}}$.
+
+
+
+
+
+
 
 
 # Putting It All Together: Initiate and Train a Model
