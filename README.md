@@ -199,6 +199,7 @@ What we do is we can transpose $w_3$ so that $w_3^T$ has a shape of (d,1).
 
 $\therefore {\frac{\partial {loss}}{\partial {h_2}}} = {\frac{\partial {loss}}{\partial {\hat{y}}}} \cdot {w_3 ^ T}$
 
+Using shape check to modify and determine the equation of ${\frac{\partial {loss}}{\partial {h_i}}}$ looks a bit arbitrary. So in the section, In-Depth Understanding of MLP Gradient Calculation, we will look more in-depth into how we get this equation.
 
 3. $\frac{\partial {loss}}{\partial {z_2}}$
 
