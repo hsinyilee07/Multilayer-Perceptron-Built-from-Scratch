@@ -51,25 +51,15 @@ Let us define a model of two hidden layers (meaning there are two pairs of Linea
 
 The forward pass would be:
 
-Linear Layer 1:
+$z_1$ = $x \cdot w_1 + b_1$  Linear Layer 1
 
-$z_1$ = $x \cdot w_1 + b_1$
+$h_1$ = activation($z_1$)  Activation Layer 1
 
-Activation Layer 1:
+$z_2$ = $h_1 \cdot w_2 + b_2$  Linear Layer 2
 
-$h_1$ = activation($z_1$)  
+$h_2$ = activation($z_2$)  Activation Layer 2
 
-Linear Layer 2:
-
-$z_2$ = $h_1 \cdot w_2 + b_2$
-
-Activation Layer 2:
-
-$h_2$ = activation($z_2$)
-
-Linear Layer 3:
-
-$\hat{y}$ = $h_2 \cdot w_3 + b_3$
+$\hat{y}$ = $h_2 \cdot w_3 + b_3$  Linear Layer 3
 
 Here $\hat{y}$ serves as $z_3$.
 
