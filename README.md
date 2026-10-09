@@ -362,7 +362,7 @@ Lets first simplify the expression to ${\frac{\partial {loss}}{\partial {h}}} = 
 
 ${\frac{\partial {loss}}{\partial {h}}}$ is a matrix of shape (m, n), in which:
 - m is the number of samples
-- n is the number of features passed as input to the linear {z} layer.
+- n is the number of features passed as input to the linear ${z}$ layer.
 
 $$
 \begin{bmatrix}
