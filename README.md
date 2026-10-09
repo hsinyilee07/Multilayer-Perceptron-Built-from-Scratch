@@ -10,7 +10,11 @@ pip install pandas
 pip install scikit-learn
 ```
 
-# Walk Through of Each Module of a Multilayer Perceptron
+## Sections:
+1. CONCEPT & MATH BEHIND CODE: Walk Through of Each Module of a Multilayer Perceptron
+2. USING THE CODE: Initiate and Train a Multilayer Perceptron
+
+# CONCEPT & MATH BEHIND CODE: Walk Through of Each Module of a Multilayer Perceptron
 ## Sections:
 1. Overview
 2. Forward Pass
@@ -350,7 +354,7 @@ elif isinstance(layer, Activation):
 Vice Versa process. Current x is $\frac{\partial {loss}}{\partial {h_{i-1}}}$, so new x is updated as $\frac{\partial {loss}}{\partial {z_{i-1}}}$.
 
 
-# Putting It All Together: Initiate and Train a Model
+# USING THE CODE: Initiate and Train a MLP
 ## Sections:
 1. Initiate Model
 2. Data Preparation
