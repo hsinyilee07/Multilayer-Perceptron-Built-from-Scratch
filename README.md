@@ -220,7 +220,7 @@ activation_derivative($z_2$) shape same as activation($z_2$), which is (a, d)
 
 Same as step 2, as ${\hat{y}}$ is technically ${z_3}$.
 
-${\frac{\partial {loss}}{\partial {\hat{h_1}}}} = {\frac{\partial {loss}}{\partial {z_2}}} \cdot {w_2 ^ T}$
+$\therefore {\frac{\partial {loss}}{\partial {\hat{h_1}}}} = {\frac{\partial {loss}}{\partial {z_2}}} \cdot {w_2 ^ T}$
 
 
 
