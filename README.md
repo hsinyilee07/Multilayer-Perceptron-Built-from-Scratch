@@ -139,6 +139,7 @@ ${loss}$ = $\frac{1}{2}(\hat{y} - y_{val})^2$
 Backpropagation, unlike foward pass, is computing the partial derivative of ${loss}$ with respect to the output of each layer starting the last layer to the first layer.
 
 1. $\frac{\partial {loss}}{\partial {\hat{y}}}$
+
 ${loss}$ = $\frac{1}{2}(\hat{y} - y_{val})^2$
 
 $\frac{\partial {loss}}{\partial {\hat{y}}} = 2 \times \hat{y} - y_{val}$
