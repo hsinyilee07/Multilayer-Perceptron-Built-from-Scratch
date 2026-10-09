@@ -30,12 +30,12 @@ Applications Include:
 1. Structure: Alternating Linear & Activation Layers, each layer's output is another layer's input in the Forward Pass described below.
 
 2. Flow:
-1) Forward Pass: input (x) -> linear layer1 ($z_1$) -> activation layer1 ($h_1$) -> ... alternating ... -> output ($y_pred$)
+1) Forward Pass: input ($x$) -> linear layer1 ($z_1$) -> activation layer1 ($h_1$) -> ... alternating ... -> output ($\hat{y}$)
 
-- x: input value, input of the first linear layer
-- $z_i$: output value of the linear layer i, input value of the activation layer i
+- $x$: input value, input of the first linear layer
+- $z_i$: output value of the linear layer $i$, input value of the activation layer $i$
 - $h_i$: output value of the activation layer i, input value of the next linear layer $i + 1 $ 
-- $y_pred$: could be a $z_last$ or a $h_last$ depending on whether the last layer is a linear layer or a activation layer
+- $\hat{y}$: final prediction, could be a $z$ or a $h$ depending on whether the last layer is a linear layer or an activation layer
 
 2) Loss Calculation: uses the output (y_pred) to calculate the loss, which measures how "far" is the predicted result from the actual value
 3) Backpropagation: calculate the partial derivative of loss with respect to each of y_pred, h (output of each activation layer), z 
