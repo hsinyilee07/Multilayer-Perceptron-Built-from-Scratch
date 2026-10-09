@@ -62,7 +62,7 @@ Here $\hat{y}$ serves as $z_3$.
 ### Refer to linear.py
 Linear Class sets up:
 
-$z_i$ = $x$ @ $w_i$ + $b_i$
+$z_i$ = $x \cdot w_i + b_i$
 
 ```python
 def __init__(self, input_dim, output_dim):
@@ -128,6 +128,7 @@ $b_i -= {lr} \times \frac{\partial {loss}}{\partial {b_i}}$
 ### Mechanism 
 Now, let us see how do we compute $\frac{\partial {loss}}{\partial {parameter}}$.
 
+#### Set of model structure
 We will still use the model of two hidden layers as example, the shape of each variable is listed:
 
 1. $z_1$ = $x \cdot w_1 + b_1$
@@ -156,10 +157,11 @@ shape: $h_2$ = (a, d), $w_3$ = (d, 1), $b_3$ = (e, 1), $\hat{y}$ = (a, 1)
 
 And we will say that this is a regression model, which uses the MeanSquareError as loss function:
 
-${loss}$ = $\frac{1}{2}(\hat{y} - y_{val})^2$
+6. ${loss}$ = $\frac{1}{2}(\hat{y} - y_{val})^2$
 
 shape: $\hat{y}$ = (a, 1), $y_{val}$ = (a, 1), ${loss}$ = (a, 1)
 
+#### Calculate Partial Derivative
 Backpropagation, unlike foward pass, is computing the partial derivative of ${loss}$ with respect to the output of each layer starting the last layer to the first layer. 
 
 HINT: the shape of $\frac{\partial {loss}}{\partial {parameter}}$ is the shape of the parameter!
