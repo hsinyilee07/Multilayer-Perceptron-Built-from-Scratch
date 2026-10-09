@@ -287,7 +287,7 @@ ${\frac{\partial {loss}}{\partial {h_i}}} = {\frac{\partial {loss}}{\partial {z_
 
 $\frac{\partial {loss}}{\partial {z_i}}$ = $\frac{\partial {loss}}{\partial {h_i}}$ $\times$ activation_derivative($z_i$)
 
-${\frac{\partial {loss}}{\partial {w_i}}} = {h_{i-1} ^ T} \cdot {\frac{\partial {loss}}{\partial {z_i}}}$.      !!!$h_0$ is $x$
+${\frac{\partial {loss}}{\partial {w_i}}} = {h_{i-1} ^ T} \cdot {\frac{\partial {loss}}{\partial {z_i}}}$.      $h_0$ is $x$
 
 ${\frac{\partial {loss}}{\partial {b_i}}} = \frac{\partial {loss}}{\partial {z_i}}$
 
