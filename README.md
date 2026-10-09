@@ -142,7 +142,9 @@ Backpropagation, unlike foward pass, is computing the partial derivative of ${lo
 
 ${loss}$ = $\frac{1}{2}(\hat{y} - y_{val})^2$
 
-$\frac{\partial {loss}}{\partial {\hat{y}}} = 2 \times \hat{y} - y_{val}$
+$\frac{\partial {loss}}{\partial {\hat{y}}} = 2 \times (\hat{y} - y_{val})$
+
+2. 
 
 
 ## Putting it all together: nn.py
