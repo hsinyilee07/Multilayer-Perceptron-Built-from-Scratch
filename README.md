@@ -92,6 +92,19 @@ def __call__(self, x):
 ```
 Stores the input $x$ for backpropagation (explained later), and called during forward pass to calculate $h_i$.
 
+## Loss Calculation
+The loss calculates how "far" the prediction is from the actual value. Different applications use different loss equations.
+
+### Application 1: Regression
+Refer to loss.py, MeanSquareError Class
+```python
+def __call__(self, pred, val):
+    self.pred = pred
+    self.val = val
+    return np.mean((pred - val)**2)
+```
+loss = $\frac{1}{2}(\hat{y} - y_{val})^2$ is computed.
+
 ## Back propagation 
 
 ## Putting it all together: nn.py
