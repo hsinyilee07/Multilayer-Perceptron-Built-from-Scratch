@@ -325,7 +325,6 @@ If we are in a layer of $z_i$ = $h_{i-1} \cdot w_i + b_i$, we know the current x
 ```python
 dL_dweight = layer.input.T @ x
 dL_dbias = np.sum(x)
-layer.update(lr, dL_dweight, dL_dbias)
 
 x = x @ layer.weights.T  
 ```
@@ -333,10 +332,21 @@ x = x @ layer.weights.T
 So we can calculate $\frac{\partial {loss}}{\partial {w_i}}$, $\frac{\partial {loss}}{\partial {b_i}}$, and $\frac{\partial {loss}}{\partial {h_{i-1}}}$. The x is updated as $\frac{\partial {loss}}{\partial {h_i}}$.
 
 ```python
+layer.update(lr, dL_dweight, dL_dbias)
+```
+refer to Linear Class in linear.py
+
+```python
+def update(self, lr, gradient_weight, gradient_bias):
+    self.weights -= lr * gradient_weight
+    self.bias -= lr * gradient_bias
+```
+The end goal of backpropagation is MET!!!!!!
+
+```python
 elif isinstance(layer, Activation):   
     x = x * layer.take_derivative() 
 ```
-
 Vice Versa process. Current x is $\frac{\partial {loss}}{\partial {h_{i-1}}}$, so new x is updated as $\frac{\partial {loss}}{\partial {z_{i-1}}}$.
 
 
