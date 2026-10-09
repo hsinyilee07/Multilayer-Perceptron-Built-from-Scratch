@@ -222,7 +222,12 @@ Same as step 2, as ${\hat{y}}$ is technically ${z_3}$.
 
 $\therefore {\frac{\partial {loss}}{\partial {\hat{h_1}}}} = {\frac{\partial {loss}}{\partial {z_2}}} \cdot {w_2 ^ T}$
 
+5. $\frac{\partial {loss}}{\partial {\hat{z_1}}}$
 
+Same as step 3. 
+
+$\therefore$
+$\frac{\partial {loss}}{\partial {\hat{z_1}}}$ = $\frac{\partial {loss}}{\partial {\hat{h_2}}}$ $\times$ activation_derivative($z_1$)
 
 
 ## Putting it all together: nn.py
