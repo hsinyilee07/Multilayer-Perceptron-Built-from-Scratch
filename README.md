@@ -144,7 +144,11 @@ ${loss}$ = $\frac{1}{2}(\hat{y} - y_{val})^2$
 
 $\frac{\partial {loss}}{\partial {\hat{y}}} = 2 \times (\hat{y} - y_{val})$
 
-2. 
+2. $\frac{\partial {loss}}{\partial {\hat{h_2}}}$
+
+using the chain rule: $\frac{\partial {loss}}{\partial {\hat{h_2}}}$ = $\frac{\partial {loss}}{\partial {\hat{y}}} \times \frac{\partial {\hat{y}}}{\partial {\hat{h_2}}}$
+
+
 
 
 ## Putting it all together: nn.py
