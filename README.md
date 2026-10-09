@@ -273,9 +273,19 @@ Check Shape:
 
 (a, 1) = (a, 1), same as $b_3$
 
-3. We DON'T have to do more calculations, because all $w_i$ and $b_i$ are calculated in the same way. And because $\hat{y}$ is $z_3$, we know both $w_i$ and $b_i$ are related to $z_i$.
+We DON'T have to do more calculations, because all $w_i$ and $b_i$ are calculated in the same way. And because $\hat{y}$ is $z_3$, we know both $w_i$ and $b_i$ are related to $z_i$.
 
 So the general formula is:
+
+${\frac{\partial {loss}}{\partial {w_i}}} = {x_i ^ T} \cdot {\frac{\partial {loss}}{\partial {z_i}}}$.      Here $x_i$ is $h_{i-1}$, for which $h_0$ is $x$
+
+${\frac{\partial {loss}}{\partial {b_i}}} = \frac{\partial {loss}}{\partial {z_i}}$
+
+## Summarize Formula 
+
+$\therefore {\frac{\partial {loss}}{\partial {h_i}}} = {\frac{\partial {loss}}{\partial {z_{i+1}}}} \cdot {w_{i+1} ^ T}$
+
+$\frac{\partial {loss}}{\partial {z_i}}$ = $\frac{\partial {loss}}{\partial {h_i}}$ $\times$ activation_derivative($z_i$)
 
 ${\frac{\partial {loss}}{\partial {w_i}}} = {x_i ^ T} \cdot {\frac{\partial {loss}}{\partial {z_i}}}$.      Here $x_i$ is $h_{i-1}$, for which $h_0$ is $x$
 
