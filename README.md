@@ -234,13 +234,13 @@ Now we calculated $\frac{\partial {loss}}{\partial {z_i}}$ and $\frac{\partial {
 
 1. $\frac{\partial {loss}}{\partial {w_3}}$ 
 
-Using the chain rule: $\frac{\partial {loss}}{\partial {w_3}}$ = $\frac{\partial {loss}}{\partial {h_2}} \times \frac{\partial {h_2}}{\partial {w_3}}$
+Using the chain rule: $\frac{\partial {loss}}{\partial {w_3}}$ = $\frac{\partial {loss}}{\partial {\hat{y}}} \times \frac{\partial {\hat{y}}}{\partial {w_3}}$
 
 $\because$
 $\hat{y}$ = $h_2 \cdot w_3 + b_3$
 
 $\therefore$
-${\frac{\partial {h_2}}{\partial {w_3}}} = {h_2}$
+${\frac{\partial {\hat{y}}}{\partial {w_3}}} = {h_2}$
 
 $\therefore$
 ${\frac{\partial {loss}}{\partial {w_3}}} = {\frac{\partial {loss}}{\partial {\hat{y}}}} \cdot {h_2}$
@@ -254,7 +254,25 @@ So we can transpose ${h_2}$ so ${h_2 ^ T}$ is (d, a).
 (d, a) $\cdot$ (a, 1) = (d, 1), same as ${w_3}$
 
 $\therefore$
-${\frac{\partial {loss}}{\partial {w_3}}} = {h_2 ^ T} \cdot {\frac{\partial {loss}}{\partial {\hat{y}}}} $
+${\frac{\partial {loss}}{\partial {w_3}}} = {h_2 ^ T} \cdot {\frac{\partial {loss}}{\partial {\hat{y}}}}$
+
+2. $\frac{\partial {loss}}{\partial {b_3}}$ 
+
+Using the chain rule: $\frac{\partial {loss}}{\partial {b_3}}$ = $\frac{\partial {loss}}{\partial {\hat{y}}} \times \frac{\partial {\hat{y}}}{\partial {b_3}}$
+
+$\because$
+$\hat{y}$ = $h_2 \cdot w_3 + b_3$
+
+$\therefore$
+${\frac{\partial {\hat{y}}}{\partial {b_3}}} = 1$
+
+$\therefore$
+${\frac{\partial {loss}}{\partial {b_3}}} = \frac{\partial {loss}}{\partial {\hat{y}}}$
+
+Check Shape:
+
+(a, 1) = (a, 1), same as $b_3$
+
 
 ## Putting it all together: nn.py
 
