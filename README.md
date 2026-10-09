@@ -87,8 +87,8 @@ $h_i$ = activation($z_i$)
 The below is an example for ReLU activation.
 ```python
 def __call__(self, x):
-      self.input = x[:]
-      return np.maximum(0 , x)
+    self.input = x[:]
+    return np.maximum(0 , x)
 ```
 Stores the input $x$ for backpropagation (explained later), and called during forward pass to calculate $h_i$.
 
