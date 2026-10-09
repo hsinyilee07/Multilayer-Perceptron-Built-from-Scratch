@@ -205,7 +205,7 @@ $\therefore$
 $\frac{\partial {\hat{h_2}}}{\partial {\hat{z_2}}}$ = activation_derivative($z_2$)
 
 $\therefore$
-$\frac{\partial {loss}}{\partial {\hat{z_2}}}$ = $\frac{\partial {loss}}{\partial {\hat{h_2}}} \times $ activation_derivative($z_2$)
+$\frac{\partial {loss}}{\partial {\hat{z_2}}}$ = $\frac{\partial {loss}}{\partial {\hat{h_2}}}$ $\times$ activation_derivative($z_2$)
 
 Check Shape:
 
