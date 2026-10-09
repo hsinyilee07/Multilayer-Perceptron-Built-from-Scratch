@@ -50,7 +50,7 @@ The forward pass would be:
 $z_1$ = $x$ @ $w_1$ + $b_1$
 <br>$h_1$ = activation($z_1$)
 <br>$z_2$ = $h_1$ @ $w_2$ + $b_2$
-<br>$h_2$ = activation($z_1$)
+<br>$h_2$ = activation($z_2$)
 <br>$\hat{y}$ = $h_2$ @ $w_3$ + $b_3$
 
 Here $\hat{y}$ serves as $z_3$.
@@ -124,19 +124,41 @@ $b_i -= {lr} \times \frac{\partial {loss}}{\partial {b_i}}$
 ### Mechanism 
 Now, let us see how do we compute $\frac{\partial {loss}}{\partial {parameter}}$.
 
-We will still use the model of two hidden layers as example:
+We will still use the model of two hidden layers as example, the shape of each variable is listed:
 
-$z_1$ = $x$ @ $w_1$ + $b_1$
-<br>$h_1$ = activation($z_1$)
+$z_1$ = $x$ @ $w_1$ + $b_1$ 
+
+shape: $x$ = (a, b), $w_1$ = (b, c), $b_1$ = (c), $z_1$ = (a, c)
+- a is number of samples
+- b is the number of features of the sample
+- c is the number of perpectrons or neurons in this layer
+
+$h_1$ = activation($z_1$)  
+
+shape: $z_1$ = (a, c), $h_1$ = (a, c)
+
 <br>$z_2$ = $h_1$ @ $w_2$ + $b_2$
-<br>$h_2$ = activation($z_1$)
+
+shape: $h_1$ = (a, c), $w_2$ = (c, d), $b_2$ = (d), $z_2$ = (a, d)
+- d is the number of perpectrons or neurons in this layer
+
+<br>$h_2$ = activation($z_2$)
+
+shape: $z_2$ = (a, d), $h_2$ = (a, d)
+
 <br>$\hat{y}$ = $h_2$ @ $w_3$ + $b_3$
+
+shape: $h_2$ = (a, d), $w_3$ = (d, 1), $b_3$ = (e, 1), $\hat{y}$ = (a, 1)
 
 And we will say that this is a regression model, which uses the MeanSquareError as loss function:
 
 ${loss}$ = $\frac{1}{2}(\hat{y} - y_{val})^2$
 
-Backpropagation, unlike foward pass, is computing the partial derivative of ${loss}$ with respect to the output of each layer starting the last layer to the first layer.
+shape: $\hat{y}$ = (a, 1), $y_{val}$ = (a, 1), ${loss}$ = (a, 1)
+
+Backpropagation, unlike foward pass, is computing the partial derivative of ${loss}$ with respect to the output of each layer starting the last layer to the first layer. 
+
+\textit{italicized} hint: the shape of $\frac{\partial {loss}}{\partial {parameter}}$ is the shape of the parameter!
 
 1. $\frac{\partial {loss}}{\partial {\hat{y}}}$
 
@@ -147,6 +169,8 @@ $\frac{\partial {loss}}{\partial {\hat{y}}} = 2 \times (\hat{y} - y_{val})$
 2. $\frac{\partial {loss}}{\partial {\hat{h_2}}}$
 
 using the chain rule: $\frac{\partial {loss}}{\partial {\hat{h_2}}}$ = $\frac{\partial {loss}}{\partial {\hat{y}}} \times \frac{\partial {\hat{y}}}{\partial {\hat{h_2}}}$
+
+
 
 
 
