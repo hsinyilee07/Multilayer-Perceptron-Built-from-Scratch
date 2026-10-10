@@ -158,7 +158,7 @@ b_{1} & b_{2} & \cdots & b_{c}\\
 \end{bmatrix}
 $$ 
 
-Calculate $z_{2,1}$, which is the output of the linear layer for the second sample at the first perceptron of the layer.
+Calculate $z_{2,1}$, which is the output of the linear layer for the second sample at the first perceptron of the first linear layer.
 
 $z_{2,1}$ = $x_{2,1} \times w_{1,1}  + x_{2,2} \times w_{2,1} + ... + x_{2,b}  \times w_{b,1} + b_{1}$
 
@@ -234,6 +234,10 @@ w_{c,1} & z_{c,2} & \cdots & w_{c,d}\\
 b_{1} & b_{2} & \cdots & b_{d}\\
 \end{bmatrix}
 $$ 
+
+Calculate $z_{2,1}$, which is the output of the linear layer for the second sample at the first perceptron of the second linear layer.
+
+$z_{2,1}$ = $h_{2,1} \times w_{1,1}  + h_{2,2} \times w_{2,1} + ... + h_{2,c}  \times w_{c,1} + b_{1}$
 
 <p align='center'>
 <img width="640" height="634" alt="second_linear_layer" src="https://github.com/user-attachments/assets/864eef46-90e9-4f21-a1d7-255ea6e2f466" />
