@@ -445,11 +445,11 @@ $$
 \begin{bmatrix}
 \frac{\partial {loss}}{\partial {z_{1,1}}} \times w_{1,1} + \frac{\partial {loss}}{\partial {z_{1,2}}} \times w_{1,2} + ... + \frac{\partial {loss}}{\partial {z_{1,p}}} \times w_{1,p}
 & 
-3
+\frac{\partial {loss}}{\partial {z_{1,1}}} \times w_{2,1} + \frac{\partial {loss}}{\partial {z_{1,2}}} \times w_{2,2} + ... + \frac{\partial {loss}}{\partial {z_{1,p}}} \times w_{2,p}
 & 
 \cdots 
 & 
-w_{1, p} \\
+\frac{\partial {loss}}{\partial {z_{1,1}}} \times w_{n,1} + \frac{\partial {loss}}{\partial {z_{1,2}}} \times w_{n,2} + ... + \frac{\partial {loss}}{\partial {z_{1,p}}} \times w_{n,p}\\
 \end{bmatrix}
 $$
 
