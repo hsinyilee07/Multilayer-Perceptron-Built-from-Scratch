@@ -183,9 +183,22 @@ h_{a,1} & h_{a,2} & \cdots & h_{a,c}\\
 \end{bmatrix}
 $$
 
+- Calculation
+Let $f$ represent the activation function.
 
-$f(x)$
-
+$$
+\begin{bmatrix}
+h_{1,1} & h_{1,2} & \cdots & h_{1,c}\\
+h_{2,1} & h_{2,2} & \cdots & h_{2,c}\\
+\vdots & \vdots & \vdots & \vdots\\
+h_{a,1} & h_{a,2} & \cdots & h_{a,c}\\
+\end{bmatrix} = \begin{bmatrix}
+f(z_{1,1}) & f(z_{1,2}) & \cdots & f(z_{1,c})\\
+f(z_{2,1}) & f(z_{2,2}) & \cdots & f(z_{2,c})\\
+\vdots & \vdots & \vdots & \vdots\\
+f(z_{a,1}) & f(z_{a,2}) & \cdots & f(z_{a,c})\\
+\end{bmatrix}
+$$
 
 ### Refer to linear.py
 Linear Class sets up:
