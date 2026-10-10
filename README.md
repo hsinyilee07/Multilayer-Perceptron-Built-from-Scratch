@@ -71,10 +71,10 @@ The visual representation of this model would be:
 
 ### Define Each Variable in Detail:
 1. $x$
-- Input Array
+- Input for training
 - Shape: 2D-array of (a, b). 
     - a is the number of samples (e.g., number of patients)
-    - b is the number of features for each sample (e.g., each patient has 2 features: age, blood pressure level)
+    - b is the number of features of each sample (e.g., each patient has 2 features: age, blood pressure level)
 - Visual Representation
 
 $$
@@ -83,6 +83,23 @@ x_{1,1} & x_{1,2} & \cdots & x_{1,b}\\
 x_{2,1} & x_{2,2} & \cdots & x_{2,b}\\
 \vdots & \vdots & \vdots & \vdots\\
 x_{a,1} & x_{a,2} & \cdots & x_{a,b}\\
+\end{bmatrix}
+$$
+
+1. $z1$
+- Output of the first linear layer. Taking $x$ as an input.
+- Shape: 2D-array of (a, c). 
+    - a is the number of samples
+    - c is the number of perceptrons and neurons in the first linear layer.
+
+- Visual Representation
+
+$$
+\begin{bmatrix}
+z_{1,1} & z_{1,2} & \cdots & z_{1,c}\\
+z_{2,1} & z_{2,2} & \cdots & z_{2,c}\\
+\vdots & \vdots & \vdots & \vdots\\
+z_{a,1} & z_{a,2} & \cdots & z_{a,c}\\
 \end{bmatrix}
 $$
 
