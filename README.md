@@ -435,7 +435,7 @@ So if we want to construct the matrix for the first sample:
 
 $$
 \begin{bmatrix}
-{\frac{\partial {loss}}{\partial {h_{1, 1}}}} & {\frac{\partial {loss}}{\partial {h_{1, 2}}}} & \cdots & {\frac{\partial {loss}}{\partial {h_{1, n}}}}
+{\frac{\partial {loss}}{\partial {h_{1, 1}}}} & {\frac{\partial {loss}}{\partial {h_{1, 2}}}} & \cdots & {\frac{\partial {loss}}{\partial {h_{1, n}}}}\\
 \end{bmatrix}
 $$
 
@@ -444,7 +444,6 @@ It would be:
 $$
 \begin{bmatrix}
 w_{1, 1} & w_{1, 2} & \cdots & w_{1, p} \\
-w_{2, 1} & w_{2, 2} & \cdots & w_{2, p} \\
 \end{bmatrix}
 $$
 
