@@ -67,6 +67,7 @@ The visual representation of this model would be:
 
 <p align='center'>
 <img width="640" height="474" alt="fcl" src="https://github.com/user-attachments/assets/494bec1c-ae93-4bda-97fb-020c16a1bc81" />
+<img width="640" height="474" alt="fcl" src="https://github.com/user-attachments/assets/494bec1c-ae93-4bda-97fb-020c16a1bc81" />
 </p>
 
 ### Define Each Variable in Detail:
@@ -165,7 +166,6 @@ $z_{2,1}$ = $x_{2,1} \times w_{1,1}  + x_{2,2} \times w_{2,1} + ... + x_{2,b}  \
 <p align='center'>
 <img width="640" height="440" alt="first_linear_layer" src="https://github.com/user-attachments/assets/89dd63d2-f869-4420-ad83-41f9228364d9" />
 </p>
-
 
 3. $h1$
 - Output of the first activation layer. Taking $z1$ as an input.
