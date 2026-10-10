@@ -469,8 +469,36 @@ w_{1,p} & w_{2,p} & \cdots & w_{n,p}\\
 $$
 
 
+So a matrix with all samples would be
+$$
+\begin{bmatrix}
+{\frac{\partial {loss}}{\partial {z_{1, 1}}}} & {\frac{\partial {loss}}{\partial {z_{1, 2}}}} & \cdots & {\frac{\partial {loss}}{\partial {z_{1, p}}}} \\
+{\frac{\partial {loss}}{\partial {z_{2, 1}}}} & {\frac{\partial {loss}}{\partial {z_{2, 2}}}} & \cdots & {\frac{\partial {loss}}{\partial {z_{2, p}}}} \\
+\vdots & \vdots & \vdots & \vdots \\
+{\frac{\partial {loss}}{\partial {z_{m, 1}}}} & {\frac{\partial {loss}}{\partial {z_{m, 2}}}} & \cdots & {\frac{\partial {loss}}{\partial {z_{m, p}}}}  \\
+\cdot
+\begin{bmatrix}
+w_{1,1} & w_{2,1} & \cdots & w_{n,1}\\
+w_{1,2} & w_{2,2} & \cdots & w_{n,2}\\
+\vdots & \vdots & \vdots & \vdots \\
+w_{1,p} & w_{2,p} & \cdots & w_{n,p}\\
+\end{bmatrix}
+$$
 
+Note that $w_{T}$ is:
 
+$$
+\begin{bmatrix}
+w_{1,1} & w_{2,1} & \cdots & w_{n,1}\\
+w_{1,2} & w_{2,2} & \cdots & w_{n,2}\\
+\vdots & \vdots & \vdots & \vdots \\
+w_{1,p} & w_{2,p} & \cdots & w_{n,p}\\
+\end{bmatrix}
+$$
+
+Therefore:
+
+${\frac{\partial {loss}}{\partial {h_i}}} = {\frac{\partial {loss}}{\partial {z_{i+1}}}} \cdot {w_{i+1} ^ T}$ 
 
 
 # USING THE CODE: Initiate and Train a MLP
