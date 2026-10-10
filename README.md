@@ -111,6 +111,7 @@ Define the two other variable:
             - b is the number of features passed from the input
             - c is the number of perceptrons or neurons in the first linear layer
         - visual representation:
+        
 $$
 \begin{bmatrix}
 w_{1,1} & w_{1,2} & \cdots & w_{1,c}\\
