@@ -160,7 +160,7 @@ $$
 
 Calculate $z_{2,1}$, which is the output of the linear layer for the second sample at the first perceptron of the layer.
 
-$z_{2,1}$ = $x_{2,1} \times w_{1,1}  + x_{2,2} \times w_{2,1} + ... + x_{2,b} \times w_{b,1}$
+$z_{2,1}$ = $x_{2,1} \times w_{1,1}  + x_{2,2} \times w_{2,1} + ... + x_{2,b}  \times w_{b,1} + b_{1}$
 
 ### Refer to linear.py
 Linear Class sets up:
