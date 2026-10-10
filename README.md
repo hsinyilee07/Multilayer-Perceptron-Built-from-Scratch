@@ -206,8 +206,10 @@ $$
 - Shape: 2D-array of (a, d). 
     - a is the number of samples
     - d is the number of perceptrons or neurons in the second linear layer.
-- $w2$: shape (c, d). The number of perceptrons c in the previous layer is the same as the number of features c in this current layer.
-- $b2$: shape (d)
+- $w2$
+    - shape (c, d). The number of perceptrons c in the previous layer is the same as the number of features c passed as input to this current layer.
+- $b2$
+    - shape (d)
 - Calculation:
 
 $$
