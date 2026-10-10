@@ -110,22 +110,22 @@ Define the two other variable:
         - shape: 2D-array (b, c)
             - b is the number of features passed from the input
             - c is the number of perceptrons or neurons in the first linear layer
-        - visual representation:
-
-            $$
-            \begin{bmatrix}
-            w_{1,1} & w_{1,2} & \cdots & w_{1,c}\\
-            w_{2,1} & z_{2,2} & \cdots & w_{2,c}\\
-            \vdots & \vdots & \vdots & \vdots\\
-            w_{b,1} & z_{b,2} & \cdots & w_{b,c}\\
-            \end{bmatrix}
-            $$ 
     
     - $b1$:
         - bias of the perceptrons or neurons in the first linear layer
         - shape: 1D-array (c)
             - c is the number of perceptrons or neurons in the first linear layer
-        - visual representation:
+
+Visual Representaion of $w1$ and $b1$:
+
+$$
+\begin{bmatrix}
+w_{1,1} & w_{1,2} & \cdots & w_{1,c}\\
+w_{2,1} & z_{2,2} & \cdots & w_{2,c}\\
+\vdots & \vdots & \vdots & \vdots\\
+w_{b,1} & z_{b,2} & \cdots & w_{b,c}\\
+\end{bmatrix}
+$$ 
 
 $$
 \begin{bmatrix}
