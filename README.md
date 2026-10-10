@@ -294,6 +294,13 @@ b_{1} & b_{2} & \cdots & b_{e}\\
 \end{bmatrix}
 $$ 
 
+Take a regression model as an example. e = 1 because the prediction would be a numerical value.
+
+Calculate ${\hat{y}}_{2,1}$, which is the output of the second sample at the first and only perceptron of the last linear layer. This is the final output of the entire forward pass.
+
+${\hat{y}}_{2,1}$ = $h_{2,1} \times w_{1,1}  + h_{2,2} \times w_{2,1} + ... + h_{2,c} \times w_{d,1} + b_{1}$
+
+
 ### Refer to linear.py
 Linear Class sets up:
 
