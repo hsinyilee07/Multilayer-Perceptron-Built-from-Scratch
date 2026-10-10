@@ -459,7 +459,7 @@ $$
 \begin{bmatrix}
 {\frac{\partial {loss}}{\partial {z_{1, 1}}}} & {\frac{\partial {loss}}{\partial {z_{1, 2}}}} & \cdots & {\frac{\partial {loss}}{\partial {z_{1, p}}}}\\
 \end{bmatrix}
-\dot
+\cdot
 \begin{bmatrix}
 {\frac{\partial {loss}}{\partial {z_{1, 1}}}} & {\frac{\partial {loss}}{\partial {z_{1, 2}}}} & \cdots & {\frac{\partial {loss}}{\partial {z_{1, p}}}}\\
 \end{bmatrix}
