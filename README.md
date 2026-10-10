@@ -410,10 +410,10 @@ Since ${h_{1, 1}}$, the first feature of sample 1, is an input to ALL of the per
 $\frac{\partial {loss}}{\partial {h_{1,1}}}$ = $\frac{\partial {loss}}{\partial {z_{1,1}}} \times \frac{\partial {z_{1,1}}}{\partial {h_{1,1}}}$ + $\frac{\partial {loss}}{\partial {z_{1,2}}} \times \frac{\partial {z_{1,2}}}{\partial {h_{1,1}}}$  + ... + $\frac{\partial {loss}}{\partial {z_{1,p}}} \times \frac{\partial {z_{1,p}}}{\partial {h_{1,1}}}$ 
 
 $\because$
-$\frac{\partial {z_{1,k}}}{\partial {h_{1,1}}}$ = $w_{1}{k}$
+$\frac{\partial {z_{1,k}}}{\partial {h_{1,1}}}$ = $w_{1,k}$
 
 $\therefore$
-$\frac{\partial {loss}}{\partial {h_{1,1}}}$ = $\frac{\partial {loss}}{\partial {z_{1,1}}} \times w_{1}{1}$ + $\frac{\partial {loss}}{\partial {z_{1,2}}} \times w_{1}{2}$  + ... + $\frac{\partial {loss}}{\partial {z_{1,p}}} \times w_{1}{p}$ 
+$\frac{\partial {loss}}{\partial {h_{1,1}}}$ = $\frac{\partial {loss}}{\partial {z_{1,1}}} \times w_{1,1}$ + $\frac{\partial {loss}}{\partial {z_{1,2}}} \times w_{1,2}$  + ... + $\frac{\partial {loss}}{\partial {z_{1,p}}} \times w_{1,p}$ 
 
 Let us write an equation for $\frac{\partial {loss}}{\partial {h_{1, 2}}}$ too.
 
@@ -422,10 +422,10 @@ Since ${h_{1, 2}}$, the second feature of sample 1, is an input to ALL of the pe
 $\frac{\partial {loss}}{\partial {h_{1,2}}}$ = $\frac{\partial {loss}}{\partial {z_{1,1}}} \times \frac{\partial {z_{1,1}}}{\partial {h_{1,2}}}$ + $\frac{\partial {loss}}{\partial {z_{1,2}}} \times \frac{\partial {z_{1,2}}}{\partial {h_{1,2}}}$  + ... + $\frac{\partial {loss}}{\partial {z_{1,p}}} \times \frac{\partial {z_{1,p}}}{\partial {h_{1,2}}}$ 
 
 $\because$
-$\frac{\partial {z_{1,k}}}{\partial {h_{1,2}}}$ = $w_{2}{k}$
+$\frac{\partial {z_{1,k}}}{\partial {h_{1,2}}}$ = $w_{2,k}$
 
 $\therefore$
-$\frac{\partial {loss}}{\partial {h_{1,1}}}$ = $\frac{\partial {loss}}{\partial {z_{1,1}}} \times w_{2}{1}$ + $\frac{\partial {loss}}{\partial {z_{1,2}}} \times w_{2}{2}$  + ... + $\frac{\partial {loss}}{\partial {z_{1,p}}} \times w_{2}{p}$ 
+$\frac{\partial {loss}}{\partial {h_{1,1}}}$ = $\frac{\partial {loss}}{\partial {z_{1,1}}} \times w_{2,1}$ + $\frac{\partial {loss}}{\partial {z_{1,2}}} \times w_{2,2}$  + ... + $\frac{\partial {loss}}{\partial {z_{1,p}}} \times w_{2,p}$ 
 
 # USING THE CODE: Initiate and Train a MLP
 ## Sections:
