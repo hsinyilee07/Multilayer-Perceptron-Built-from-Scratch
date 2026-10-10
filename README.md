@@ -461,7 +461,10 @@ $$
 \end{bmatrix}
 \cdot
 \begin{bmatrix}
-{\frac{\partial {loss}}{\partial {z_{1, 1}}}} & {\frac{\partial {loss}}{\partial {z_{1, 2}}}} & \cdots & {\frac{\partial {loss}}{\partial {z_{1, p}}}}\\
+w_{1,1} & w_{2,1} & \cdots & w_{n,1}\\
+w_{1,2} & w_{2,2} & \cdots & w_{n,2}\\
+\vdots & \vdots & \vdots & \vdots \\
+w_{1,p} & w_{2,p} & \cdots & w_{n,p}\\
 \end{bmatrix}
 $$
 
