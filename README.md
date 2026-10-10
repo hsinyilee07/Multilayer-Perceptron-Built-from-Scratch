@@ -392,10 +392,10 @@ $w$ is a matrix of shape (n, p), in which:
 
 $$
 \begin{bmatrix}
-{\frac{\partial {loss}}{\partial {w_{1, 1}}}} & {\frac{\partial {loss}}{\partial {w_{1, 2}}}} & \cdots & {\frac{\partial {loss}}{\partial {w_{1, p}}}} \\
-{\frac{\partial {loss}}{\partial {w_{2, 1}}}} & {\frac{\partial {loss}}{\partial {w_{2, 2}}}} & \cdots & {\frac{\partial {loss}}{\partial {w_{2, p}}}} \\
+w_{1, 1} & w_{1, 2} & \vdots & w_{1, p} \\
+w_{2, 1} & w_{2, 2} & \vdots & w_{2, p} \\
 \vdots & \vdots & \vdots & \vdots \\
-{\frac{\partial {loss}}{\partial {w_{n, 1}}}} & {\frac{\partial {loss}}{\partial {w_{n, 2}}}} & \cdots & {\frac{\partial {loss}}{\partial {w_{n, p}}}}  \\
+w_{n, 1} & w_{n, 2} & \vdots & w_{n, p} \\
 \end{bmatrix}
 $$
 
