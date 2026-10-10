@@ -443,7 +443,8 @@ It would be:
 
 $$
 \begin{bmatrix}
-\frac{\partial {loss}}{\partial {h_{1,2}}} = \frac{\partial {loss}}{\partial {z_{1,1}}} \times \frac{\partial {z_{1,1}}}{\partial {h_{1,2}}} + \frac{\partial {loss}}{\partial {z_{1,2}}} \times \frac{\partial {z_{1,2}}}{\partial {h_{1,2}}}  + ... + \frac{\partial {loss}}{\partial {z_{1,p}}} \times \frac{\partial {z_{1,p}}}{\partial {h_{1,2}}}
+
+\frac{\partial {loss}}{\partial {z_{1,1}}} \times w_{1,1} + \frac{\partial {loss}}{\partial {z_{1,2}}} \times w_{1,2}$ + ... + \frac{\partial {loss}}{\partial {z_{1,p}}} \times w_{1,p}
 & 
 3
 & 
