@@ -351,7 +351,9 @@ b_{1}\\
 \end{bmatrix}
 $$ 
 
-
+<p align='center'>
+<img width="640" height="548" alt="last_linear_layer" src="https://github.com/user-attachments/assets/a9e203ef-3b3e-4ded-af65-51ee3a738ed4" />
+</p>
 
 ### Refer to linear.py
 Linear Class sets up:
