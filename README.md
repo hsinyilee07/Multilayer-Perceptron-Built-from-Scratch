@@ -260,6 +260,40 @@ h_{a,1} & h_{a,2} & \cdots & h_{a,d}\\
 \end{bmatrix}
 $$
 
+6. ${\hat{y}}$
+- Output of the final linear layer. Taking $h2$ as an input.
+- Shape: 2D-array of (a, e). 
+    - a is the number of samples
+    - e is the number of perceptrons or neurons in the last linear layer.
+- $w3$
+    - shape (d,e). The number of perceptrons d in the previous layer is the same as the number of features d passed as input to this current layer.
+- $b3$
+    - shape (e)
+- Calculation:
+
+$$
+\begin{bmatrix}
+{\hat{y}}_{1,1} & {\hat{y}}_{1,2} & \cdots & {\hat{y}}_{1,d}\\
+{\hat{y}}_{2,1} & {\hat{y}}_{2,2} & \cdots & {\hat{y}}_{2,d}\\
+\vdots & \vdots & \vdots & \vdots\\
+{\hat{y}}_{a,1} & {\hat{y}}_{a,2} & \cdots & {\hat{y}}_{a,d}\\
+\end{bmatrix} = \begin{bmatrix}
+h_{1,1} & h_{1,2} & \cdots & h_{1,d}\\
+h_{2,1} & h_{2,2} & \cdots & h_{2,d}\\
+\vdots & \vdots & \vdots & \vdots\\
+h_{a,1} & h_{a,2} & \cdots & h_{a,d}\\
+\end{bmatrix}
+\cdot
+\begin{bmatrix}
+w_{1,1} & w_{1,2} & \cdots & w_{1,e}\\
+w_{2,1} & z_{2,2} & \cdots & w_{2,e}\\
+\vdots & \vdots & \vdots & \vdots\\
+w_{d,1} & z_{d,2} & \cdots & w_{d,e}\\
+\end{bmatrix} + \begin{bmatrix}
+b_{1} & b_{2} & \cdots & b_{e}\\
+\end{bmatrix}
+$$ 
+
 ### Refer to linear.py
 Linear Class sets up:
 
@@ -283,6 +317,7 @@ def __call__(self, x):
     return x @ self.weights + self.bias
 ```
 Stores the input $x$ for backpropagation (explained later), and called during forward pass to calculate $z_i$.
+
 
 ### Refer to activation.py
 Activation Class sets up:
