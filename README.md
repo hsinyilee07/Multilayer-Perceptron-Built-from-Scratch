@@ -326,7 +326,7 @@ Calculate ${\hat{y}}_{2,1}$, which is the output of the second sample at the fir
 
 ${\hat{y}}_{2,1}$ = 
 
-$h_{2,1} \times w_{1,1}  + h_{2,2} \times w_{2,1} + ... + h_{2,c}  \times w_{d,1} + b_{1}$
+$h_{2,1} \times w_{1,1}  + h_{2,2} \times w_{2,1} + ... + h_{2,d}  \times w_{d,1} + b_{1}$
 
 
 ### Refer to linear.py
