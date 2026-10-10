@@ -142,31 +142,24 @@ w_{2,1} & z_{2,2} & \cdots & w_{2,c}\\
 \vdots & \vdots & \vdots & \vdots\\
 w_{b,1} & z_{b,2} & \cdots & w_{b,c}\\
 \end{bmatrix}
-
 = 
-
 \begin{bmatrix}
 x_{1,1} & x_{1,2} & \cdots & x_{1,b}\\
 x_{2,1} & x_{2,2} & \cdots & x_{2,b}\\
 \vdots & \vdots & \vdots & \vdots\\
 x_{a,1} & x_{a,2} & \cdots & x_{a,b}\\
 \end{bmatrix}
-
 \cdot
-
 \begin{bmatrix}
 w_{1,1} & w_{1,2} & \cdots & w_{1,c}\\
 w_{2,1} & z_{2,2} & \cdots & w_{2,c}\\
 \vdots & \vdots & \vdots & \vdots\\
 w_{b,1} & z_{b,2} & \cdots & w_{b,c}\\
 \end{bmatrix}
-
 + 
-
 \begin{bmatrix}
 b_{1} & b_{2} & \cdots & b_{c}\\
 \end{bmatrix}
-
 $$ 
 
 ### Refer to linear.py
