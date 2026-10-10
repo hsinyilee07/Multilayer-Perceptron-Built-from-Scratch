@@ -442,9 +442,11 @@ $$
 It would be:
 $$
 \begin{bmatrix}
-1 & 2 & 3 \\
+w_{1, 1} & w_{1, 2} & \cdots & w_{1, p} \\
+w_{2, 1} & w_{2, 2} & \cdots & w_{2, p} \\
 \end{bmatrix}
 $$
+
 
 
 
