@@ -66,7 +66,7 @@ Here $\hat{y}$ serves as $z_3$.
 The visual representation of this model would be:
 
 <p align='center'>
-<img width="600" height="400" alt="mlp" src="https://github.com/user-attachments/assets/1fe6ea14-87ee-4c88-8bf4-c6a8d3b998dc" />
+<img width="640" height="474" alt="fcl" src="https://github.com/user-attachments/assets/494bec1c-ae93-4bda-97fb-020c16a1bc81" />
 </p>
 
 ### Define Each Variable in Detail:
@@ -161,6 +161,11 @@ $$
 Calculate $z_{2,1}$, which is the output of the linear layer for the second sample at the first perceptron of the layer.
 
 $z_{2,1}$ = $x_{2,1} \times w_{1,1}  + x_{2,2} \times w_{2,1} + ... + x_{2,b}  \times w_{b,1} + b_{1}$
+
+<p align='center'>
+<img width="640" height="440" alt="first_linear_layer" src="https://github.com/user-attachments/assets/89dd63d2-f869-4420-ad83-41f9228364d9" />
+</p>
+
 
 ### Refer to linear.py
 Linear Class sets up:
