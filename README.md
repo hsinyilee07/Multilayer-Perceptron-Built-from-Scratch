@@ -328,6 +328,30 @@ ${\hat{y}}_{2,1}$ =
 
 $h_{2,1} \times w_{1,1}  + h_{2,2} \times w_{2,1} + ... + h_{2,d}  \times w_{d,1} + b_{1}$
 
+$$
+\begin{bmatrix}
+{\hat{y}}_{1,1}\\
+{\hat{y}}_{2,1}\\
+\vdots \\
+{\hat{y}}_{a,1}\\
+\end{bmatrix} = \begin{bmatrix}
+h_{1,1} & h_{1,2} & \cdots & h_{1,d}\\
+h_{2,1} & h_{2,2} & \cdots & h_{2,d}\\
+\vdots & \vdots & \vdots & \vdots\\
+h_{a,1} & h_{a,2} & \cdots & h_{a,d}\\
+\end{bmatrix}
+\cdot
+\begin{bmatrix}
+w_{1,1}\\
+w_{2,1}\\
+\vdots\\
+w_{d,1}\\
+\end{bmatrix} + \begin{bmatrix}
+b_{1}\\
+\end{bmatrix}
+$$ 
+
+
 
 ### Refer to linear.py
 Linear Class sets up:
