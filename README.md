@@ -240,7 +240,7 @@ Calculate $z_{2,1}$, which is the output of the second sample at the first perce
 $z_{2,1}$ = $h_{2,1} \times w_{1,1}  + h_{2,2} \times w_{2,1} + ... + h_{2,c}  \times w_{c,1} + b_{1}$
 
 <p align='center'>
-<img width="640" height="634" alt="second_linear_layer" src="https://github.com/user-attachments/assets/864eef46-90e9-4f21-a1d7-255ea6e2f466" />
+<img width="640" height="627" alt="second_linear_layer" src="https://github.com/user-attachments/assets/2f1ae415-8d80-4a83-8d63-e92e0044294a" />
 </p>
 
 
