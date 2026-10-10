@@ -235,6 +235,9 @@ b_{1} & b_{2} & \cdots & b_{d}\\
 \end{bmatrix}
 $$ 
 
+<p align='center'>
+<img width="640" height="634" alt="second_linear_layer" src="https://github.com/user-attachments/assets/d3cf5398-5077-4d86-9bfd-8830736473e0" />
+</p>
 
 
 ### Refer to linear.py
