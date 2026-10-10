@@ -469,7 +469,8 @@ w_{1,p} & w_{2,p} & \cdots & w_{n,p}\\
 $$
 
 
-So a matrix with all samples would be
+So a matrix with all samples from 1 to m would be:
+
 $$
 \begin{bmatrix}
 {\frac{\partial {loss}}{\partial {z_{1, 1}}}} & {\frac{\partial {loss}}{\partial {z_{1, 2}}}} & \cdots & {\frac{\partial {loss}}{\partial {z_{1, p}}}} \\
