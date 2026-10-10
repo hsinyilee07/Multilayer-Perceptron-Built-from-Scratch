@@ -67,7 +67,6 @@ The visual representation of this model would be:
 
 <p align='center'>
 <img width="640" height="474" alt="fcl" src="https://github.com/user-attachments/assets/494bec1c-ae93-4bda-97fb-020c16a1bc81" />
-<img width="640" height="474" alt="fcl" src="https://github.com/user-attachments/assets/494bec1c-ae93-4bda-97fb-020c16a1bc81" />
 </p>
 
 ### Define Each Variable in Detail:
@@ -174,6 +173,7 @@ $z_{2,1}$ = $x_{2,1} \times w_{1,1}  + x_{2,2} \times w_{2,1} + ... + x_{2,b}  \
     - c is the number of perceptrons or neurons in the first linear layer.
 
 - Visual Representation
+
 $$
 \begin{bmatrix}
 h_{1,1} & h_{1,2} & \cdots & h_{1,c}\\
