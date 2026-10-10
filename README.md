@@ -69,6 +69,23 @@ The visual representation of this model would be:
 <img width="600" height="400" alt="mlp" src="https://github.com/user-attachments/assets/1fe6ea14-87ee-4c88-8bf4-c6a8d3b998dc" />
 </p>
 
+### Define Each Variable in Detail:
+1. $x$
+- Input Array
+- Shape: 2D-array of (a, b). 
+    - a is the number of samples (e.g., number of patients)
+    - b is the number of features for each sample (e.g., each patient has 2 features: age, blood pressure level)
+- Visual Representation
+
+$$
+\begin{bmatrix}
+x_{1,1} & x_{1,2} & \cdots & x_{1,b}\\
+x_{2,1} & x_{2,2} & \cdots & x_{2,b}\\
+\vdots & \vdots & \vdots & \vdots\\
+x_{a,1} & x_{a,2} & \cdots & x_{a,b}\\
+\end{bmatrix}
+$$
+
 ### Refer to linear.py
 Linear Class sets up:
 
