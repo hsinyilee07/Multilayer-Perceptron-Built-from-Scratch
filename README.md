@@ -324,7 +324,7 @@ Take a regression model as an example. e = 1 because the prediction would be a n
 
 Calculate ${\hat{y}}_{2,1}$, which is the output of the second sample at the first and only perceptron of the last linear layer. This is the final output of the entire forward pass.
 
-${\hat{y}}_{2,1}$
+${\hat{y}}_{2,1}$ = 1
 
 
 
