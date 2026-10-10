@@ -141,6 +141,11 @@ x_{1,1} & x_{1,2} & \cdots & x_{1,b}\\
 x_{2,1} & x_{2,2} & \cdots & x_{2,b}\\
 \vdots & \vdots & \vdots & \vdots\\
 x_{a,1} & x_{a,2} & \cdots & x_{a,b}\\
+\end{bmatrix} = \begin{bmatrix}
+x_{1,1} & x_{1,2} & \cdots & x_{1,b}\\
+x_{2,1} & x_{2,2} & \cdots & x_{2,b}\\
+\vdots & \vdots & \vdots & \vdots\\
+x_{a,1} & x_{a,2} & \cdots & x_{a,b}\\
 \end{bmatrix}
 \cdot
 \begin{bmatrix}
