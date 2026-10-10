@@ -397,6 +397,7 @@ $$
 \vdots & \vdots & \vdots & \vdots \\
 {\frac{\partial {loss}}{\partial {w_{n, 1}}}} & {\frac{\partial {loss}}{\partial {w_{n, 2}}}} & \cdots & {\frac{\partial {loss}}{\partial {w_{n, p}}}}  \\
 \end{bmatrix}
+$$
 
 How is ${\frac{\partial {loss}}{\partial {z}}}$ and ${\frac{\partial {loss}}{\partial {z}}}$ related by ${w^ T}$? 
 
