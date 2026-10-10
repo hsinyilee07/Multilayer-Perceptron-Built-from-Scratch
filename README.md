@@ -86,7 +86,7 @@ x_{a,1} & x_{a,2} & \cdots & x_{a,b}\\
 \end{bmatrix}
 $$
 
-1. $z1$
+2. $z1$
 - Output of the first linear layer. Taking $x$ as an input.
 - Shape: 2D-array of (a, c). 
     - a is the number of samples
@@ -116,7 +116,7 @@ Define the two other variable:
         - shape: 1D-array (c)
             - c is the number of perceptrons or neurons in the first linear layer
 
-Visual Representaion of $w1$ and $b1$:
+    - Visual Representaion of $w1$ and $b1$:
 
 $$
 \begin{bmatrix}
@@ -165,6 +165,25 @@ $z_{2,1}$ = $x_{2,1} \times w_{1,1}  + x_{2,2} \times w_{2,1} + ... + x_{2,b}  \
 <p align='center'>
 <img width="640" height="440" alt="first_linear_layer" src="https://github.com/user-attachments/assets/89dd63d2-f869-4420-ad83-41f9228364d9" />
 </p>
+
+
+3. $h1$
+- Output of the first activation layer. Taking $z1$ as an input.
+- Shape: 2D-array of (a, c). Same as $z1$.
+    - a is the number of samples
+    - c is the number of perceptrons or neurons in the first linear layer.
+
+- Visual Representation
+$$
+\begin{bmatrix}
+h_{1,1} & h_{1,2} & \cdots & h_{1,c}\\
+h_{2,1} & h_{2,2} & \cdots & h_{2,c}\\
+\vdots & \vdots & \vdots & \vdots\\
+h_{a,1} & h_{a,2} & \cdots & h_{a,c}\\
+\end{bmatrix}
+$$
+
+
 
 
 ### Refer to linear.py
