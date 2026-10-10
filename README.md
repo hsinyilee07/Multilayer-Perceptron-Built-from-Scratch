@@ -184,6 +184,7 @@ h_{a,1} & h_{a,2} & \cdots & h_{a,c}\\
 $$
 
 - Calculation
+
 Let $f$ represent the activation function.
 
 $$
