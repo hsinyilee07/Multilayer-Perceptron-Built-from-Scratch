@@ -477,6 +477,7 @@ $$
 {\frac{\partial {loss}}{\partial {z_{2, 1}}}} & {\frac{\partial {loss}}{\partial {z_{2, 2}}}} & \cdots & {\frac{\partial {loss}}{\partial {z_{2, p}}}} \\
 \vdots & \vdots & \vdots & \vdots \\
 {\frac{\partial {loss}}{\partial {z_{m, 1}}}} & {\frac{\partial {loss}}{\partial {z_{m, 2}}}} & \cdots & {\frac{\partial {loss}}{\partial {z_{m, p}}}}  \\
+\end{bmatrix}
 \cdot
 \begin{bmatrix}
 w_{1,1} & w_{2,1} & \cdots & w_{n,1}\\
