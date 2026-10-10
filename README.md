@@ -244,8 +244,8 @@ $z_{2,1}$ = $h_{2,1} \times w_{1,1}  + h_{2,2} \times w_{2,1} + ... + h_{2,c}  \
 </p>
 
 5. $h2$
-- Output of the first activation layer. Taking $z1$ as an input.
-- Shape: 2D-array of (a, d). Same as $z1$.
+- Output of the second activation layer. Taking $z2$ as an input.
+- Shape: 2D-array of (a, d). Same as $z2$.
     - a is the number of samples
     - d is the number of perceptrons or neurons in the second linear layer.
 
