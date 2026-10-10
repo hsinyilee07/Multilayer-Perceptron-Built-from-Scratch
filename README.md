@@ -185,6 +185,8 @@ $$
 
 - Calculation
 
+$h_1$ = activation($z_1$)  
+
 Let $f$ represent the activation function.
 
 $$
@@ -211,6 +213,8 @@ $$
 - $b2$
     - shape (d)
 - Calculation:
+
+$z_2$ = $h_1 \cdot w_2 + b_2$ 
 
 $$
 \begin{bmatrix}
@@ -260,6 +264,26 @@ h_{a,1} & h_{a,2} & \cdots & h_{a,d}\\
 \end{bmatrix}
 $$
 
+- Calculation
+
+$h_2$ = activation($z_2$)  
+
+Let $f$ represent the activation function.
+
+$$
+\begin{bmatrix}
+h_{1,1} & h_{1,2} & \cdots & h_{1,d}\\
+h_{2,1} & h_{2,2} & \cdots & h_{2,d}\\
+\vdots & \vdots & \vdots & \vdots\\
+h_{a,1} & h_{a,2} & \cdots & h_{a,d}\\
+\end{bmatrix} = \begin{bmatrix}
+f(z_{1,1}) & f(z_{1,2}) & \cdots & f(z_{1,d})\\
+f(z_{2,1}) & f(z_{2,2}) & \cdots & f(z_{2,d})\\
+\vdots & \vdots & \vdots & \vdots\\
+f(z_{a,1}) & f(z_{a,2}) & \cdots & f(z_{a,d})\\
+\end{bmatrix}
+$$
+
 6. ${\hat{y}}$
 - Output of the final linear layer. Taking $h2$ as an input.
 - Shape: 2D-array of (a, e). 
@@ -270,6 +294,8 @@ $$
 - $b3$
     - shape (e)
 - Calculation:
+
+$\hat{y}$ = $h_2 \cdot w_3 + b_3$  
 
 $$
 \begin{bmatrix}
