@@ -236,7 +236,7 @@ b_{1} & b_{2} & \cdots & b_{d}\\
 $$ 
 
 <p align='center'>
-<img width="640" height="634" alt="second_linear_layer" src="https://github.com/user-attachments/assets/d3cf5398-5077-4d86-9bfd-8830736473e0" />
+<img width="640" height="634" alt="second_linear_layer" src="https://github.com/user-attachments/assets/864eef46-90e9-4f21-a1d7-255ea6e2f466" />
 </p>
 
 
