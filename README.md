@@ -386,6 +386,18 @@ $$
 \end{bmatrix}
 $$
 
+$w$ is a matrix of shape (n, p), in which:
+- n is the number of features passed as input to the linear ${z}$ layer, as defined above
+- p is the number of perceptrons or neurons in this linear ${z}$ layer, as defined above
+
+$$
+\begin{bmatrix}
+{\frac{\partial {loss}}{\partial {w_{1, 1}}}} & {\frac{\partial {loss}}{\partial {w_{1, 2}}}} & \cdots & {\frac{\partial {loss}}{\partial {w_{1, p}}}} \\
+{\frac{\partial {loss}}{\partial {w_{2, 1}}}} & {\frac{\partial {loss}}{\partial {w_{2, 2}}}} & \cdots & {\frac{\partial {loss}}{\partial {w_{2, p}}}} \\
+\vdots & \vdots & \vdots & \vdots \\
+{\frac{\partial {loss}}{\partial {w_{n, 1}}}} & {\frac{\partial {loss}}{\partial {w_{n, 2}}}} & \cdots & {\frac{\partial {loss}}{\partial {w_{n, p}}}}  \\
+\end{bmatrix}
+
 How is ${\frac{\partial {loss}}{\partial {z}}}$ and ${\frac{\partial {loss}}{\partial {z}}}$ related by ${w^ T}$? 
 
 Let us take one element $\frac{\partial {loss}}{\partial {h_{1, 1}}}$ as an example. 
