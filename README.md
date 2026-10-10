@@ -65,8 +65,9 @@ Here $\hat{y}$ serves as $z_3$.
 
 The visual representation of this model would be:
 
+<p align='center'>
 <img width="600" height="400" alt="mlp" src="https://github.com/user-attachments/assets/1fe6ea14-87ee-4c88-8bf4-c6a8d3b998dc" />
-
+<\p>
 
 ### Refer to linear.py
 Linear Class sets up:
