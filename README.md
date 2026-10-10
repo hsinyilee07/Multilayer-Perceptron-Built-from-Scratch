@@ -111,7 +111,7 @@ Define the two other variable:
             - b is the number of features passed from the input
             - c is the number of perceptrons or neurons in the first linear layer
         - visual representation:
-        
+
 $$
 \begin{bmatrix}
 w_{1,1} & w_{1,2} & \cdots & w_{1,c}\\
@@ -121,6 +121,17 @@ w_{b,1} & z_{b,2} & \cdots & w_{b,c}\\
 \end{bmatrix}
 $$ 
     
+    - $b1$:
+        - bias of the perceptrons or neurons in the first linear layer
+        - shape: 1D-array (c)
+            - c is the number of perceptrons or neurons in the first linear layer
+        - visual representation:
+
+$$
+\begin{bmatrix}
+b_{1} & b_{2} & \cdots & b_{c}\\
+\end{bmatrix}
+$$ 
 
 ### Refer to linear.py
 Linear Class sets up:
