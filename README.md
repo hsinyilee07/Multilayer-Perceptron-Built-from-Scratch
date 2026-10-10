@@ -431,6 +431,23 @@ So a general equation for $\frac{\partial {loss}}{\partial {h_{1, f}}}$ is:
 
 $\frac{\partial {loss}}{\partial {h_{1,1}}}$ = $\frac{\partial {loss}}{\partial {z_{1,1}}} \times w_{f,1}$ + $\frac{\partial {loss}}{\partial {z_{1,2}}} \times w_{f,2}$  + ... + $\frac{\partial {loss}}{\partial {z_{1,p}}} \times w_{f,p}$ 
 
+So if we want to construct the matrix for the first sample:
+
+$$
+\begin{bmatrix}
+{\frac{\partial {loss}}{\partial {h_{1, 1}}}} & {\frac{\partial {loss}}{\partial {h_{1, 2}}}} & \cdots & {\frac{\partial {loss}}{\partial {h_{1, n}}}} \\
+\end{bmatrix}
+$$
+
+It would be:
+$$
+\begin{bmatrix}
+{\frac{\partial {loss}}{\partial {h_{1,1}}}$ = $\frac{\partial {loss}}{\partial {z_{1,1}}} \times w_{1,1}$ + $\frac{\partial {loss}}{\partial {z_{1,2}}} \times w_{1,2}$  + ... + $\frac{\partial {loss}}{\partial {z_{1,p}}} \times w_{1,p}} & {\frac{\partial {loss}}{\partial {h_{1,2}}}$ = $\frac{\partial {loss}}{\partial {z_{1,1}}} \times \frac{\partial {z_{1,1}}}{\partial {h_{1,2}}}$ + $\frac{\partial {loss}}{\partial {z_{1,2}}} \times \frac{\partial {z_{1,2}}}{\partial {h_{1,2}}}$  + ... + $\frac{\partial {loss}}{\partial {z_{1,p}}} \times \frac{\partial {z_{1,p}}}{\partial {h_{1,2}}}} & \cdots & {\frac{\partial {loss}}{\partial {h_{1, 1}}}} & {\frac{\partial {loss}}{\partial {h_{1, 2}}}} & \cdots & {\frac{\partial {loss}}{\partial {h_{1, n}}}} \\
+\end{bmatrix}
+$$
+
+
+
 # USING THE CODE: Initiate and Train a MLP
 ## Sections:
 1. Initiate Model
