@@ -201,7 +201,7 @@ f(z_{a,1}) & f(z_{a,2}) & \cdots & f(z_{a,c})\\
 \end{bmatrix}
 $$
 
-2. $z2$
+4. $z2$
 - Output of the second linear layer. Taking $h1$ as an input.
 - Shape: 2D-array of (a, d). 
     - a is the number of samples
@@ -243,6 +243,22 @@ $z_{2,1}$ = $h_{2,1} \times w_{1,1}  + h_{2,2} \times w_{2,1} + ... + h_{2,c}  \
 <img width="640" height="627" alt="second_linear_layer" src="https://github.com/user-attachments/assets/2f1ae415-8d80-4a83-8d63-e92e0044294a" />
 </p>
 
+5. $h2$
+- Output of the first activation layer. Taking $z1$ as an input.
+- Shape: 2D-array of (a, d). Same as $z1$.
+    - a is the number of samples
+    - d is the number of perceptrons or neurons in the second linear layer.
+
+- Visual Representation
+
+$$
+\begin{bmatrix}
+h_{1,1} & h_{1,2} & \cdots & h_{1,d}\\
+h_{2,1} & h_{2,2} & \cdots & h_{2,d}\\
+\vdots & \vdots & \vdots & \vdots\\
+h_{a,1} & h_{a,2} & \cdots & h_{a,d}\\
+\end{bmatrix}
+$$
 
 ### Refer to linear.py
 Linear Class sets up:
