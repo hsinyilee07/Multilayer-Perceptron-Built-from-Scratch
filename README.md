@@ -201,6 +201,40 @@ f(z_{a,1}) & f(z_{a,2}) & \cdots & f(z_{a,c})\\
 \end{bmatrix}
 $$
 
+2. $z2$
+- Output of the second linear layer. Taking $h1$ as an input.
+- Shape: 2D-array of (a, d). 
+    - a is the number of samples
+    - d is the number of perceptrons or neurons in the second linear layer.
+- $w2$: shape (c, d). The number of perceptrons c in the previous layer is the same as the number of features c in this current layer.
+- $b2$: shape (d)
+- Calculation:
+
+$$
+\begin{bmatrix}
+z_{1,1} & z_{1,2} & \cdots & z_{1,d}\\
+z_{2,1} & z_{2,2} & \cdots & z_{2,d}\\
+\vdots & \vdots & \vdots & \vdots\\
+z_{a,1} & z_{a,2} & \cdots & z_{a,d}\\
+\end{bmatrix} = \begin{bmatrix}
+h_{1,1} & h_{1,2} & \cdots & h_{1,c}\\
+h_{2,1} & h_{2,2} & \cdots & h_{2,c}\\
+\vdots & \vdots & \vdots & \vdots\\
+h_{a,1} & h_{a,2} & \cdots & h_{a,c}\\
+\end{bmatrix}
+\cdot
+\begin{bmatrix}
+w_{1,1} & w_{1,2} & \cdots & w_{1,d}\\
+w_{2,1} & z_{2,2} & \cdots & w_{2,d}\\
+\vdots & \vdots & \vdots & \vdots\\
+w_{c,1} & z_{c,2} & \cdots & w_{c,d}\\
+\end{bmatrix} + \begin{bmatrix}
+b_{1} & b_{2} & \cdots & b_{d}\\
+\end{bmatrix}
+$$ 
+
+
+
 ### Refer to linear.py
 Linear Class sets up:
 
