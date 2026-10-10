@@ -487,7 +487,7 @@ w_{1,p} & w_{2,p} & \cdots & w_{n,p}\\
 \end{bmatrix}
 $$
 
-Note that $w_{T}$ is:
+Note that $w^{T}$ is:
 
 $$
 \begin{bmatrix}
