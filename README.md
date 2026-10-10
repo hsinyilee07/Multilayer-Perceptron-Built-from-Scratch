@@ -405,7 +405,7 @@ Let us take one element $\frac{\partial {loss}}{\partial {h_{1, 1}}}$ as an exam
 
 We know that according to chain rule $\frac{\partial {loss}}{\partial {h_{1, 1}}}$ = $\frac{\partial {loss}}{\partial {z}} \times \frac{\partial {z}}{\partial {h_{1, 1}}}$
 
-Since ${h_{1, 1}}$, the first feature of sample 1, is an input to all of the perceptrons or neurons. The chain rule can be rewrote as the following:
+Since ${h_{1, 1}}$, the first feature of sample 1, is an input to ALL of the perceptrons or neurons in the linear layer. The chain rule can be rewritten as the following:
 
 $\frac{\partial {loss}}{\partial {h_{1,1}}}$ = $\frac{\partial {loss}}{\partial {z_{1,1}}} \times \frac{\partial {z_{1,1}}}{\partial {h_{1,1}}}$ + $\frac{\partial {loss}}{\partial {z_{1,2}}} \times \frac{\partial {z_{1,2}}}{\partial {h_{1,1}}}$  + ... + $\frac{\partial {loss}}{\partial {z_{1,p}}} \times \frac{\partial {z_{1,p}}}{\partial {h_{1,1}}}$ 
 
