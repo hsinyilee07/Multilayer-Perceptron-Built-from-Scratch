@@ -500,7 +500,7 @@ $$
 
 Therefore:
 
-${\frac{\partial {loss}}{\partial {h_i}}} = {\frac{\partial {loss}}{\partial {z_{i+1}}}} \cdot {w_{i+1} ^ T}$ 
+${\frac{\partial {loss}}{\partial {h}}} = {\frac{\partial {loss}}{\partial {z}}} \cdot {w^ T}$ 
 
 
 # USING THE CODE: Initiate and Train a MLP
