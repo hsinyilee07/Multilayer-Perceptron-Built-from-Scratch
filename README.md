@@ -443,7 +443,9 @@ It would be:
 
 $$
 \begin{bmatrix}
-w_{1, 1} & w_{1, 2} & \cdots & w_{1, p} \\
+w_{1, 1} 
+& w_{1, 2}
+& \cdots & w_{1, p} \\
 \end{bmatrix}
 $$
 
